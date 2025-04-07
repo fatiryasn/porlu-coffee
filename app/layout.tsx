@@ -21,8 +21,8 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "PorluCoffe",
-  description: "Kopi dari dataran tinggi Doloksanggul, pilihan masyarakat Sumatera Utara",
+  title: "PorluCoffee",
+  description: "Kopi dari dataran tinggi Doloksanggul, Sumatera Utara",
   icons: {
     icon: "/logo.png",
   },
@@ -39,7 +39,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${raleway.variable} ${quicksand.variable} antialiased`}
       >
         <Navbar />
-        <div className="pt-20 min-h-screen">{children}</div>
+        <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
     </html>
