@@ -230,7 +230,7 @@ export default function Home() {
         </div>
         <div className="mt-10 flex justify-center items-center">
           <Link href="/products">
-            <button className="text-gray-50 bg-green-600 rounded-xl hover:bg-green-900 transition cursor-pointer font-raleway font-semibold px-5 py-3">
+            <button className="text-gray-50 bg-green-700 rounded-xl hover:bg-green-900 transition cursor-pointer font-raleway font-semibold px-5 py-3">
               Lihat lebih banyak
             </button>
           </Link>
