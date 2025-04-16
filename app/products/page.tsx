@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 import prhero from "../../public/prhero.png";
 import logo from "../../public/logo.png";
 import ProductTabs from "../components/ProductTabs";

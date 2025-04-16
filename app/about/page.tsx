@@ -1,11 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import logo from "../../public/logo.png";
 import hero1 from "../../public/abt1.png";
 import hero2 from "../../public/abt3.png";
 import hero3 from "../../public/abt5.png";
-import bgabt from "../../public/bgabt.jpg";
 import defpic from "../../public/def-person.png";
 
 const AboutPage = () => {
