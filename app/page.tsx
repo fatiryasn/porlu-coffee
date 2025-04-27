@@ -1,16 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
-import heroBg from "../public/hero.png";
-import logo from "../public/logo.png";
-import logo2 from "../public/logo2.png";
-import insta from "../public/instagram.png";
-import product from "../public/product.jpg";
-import pic1 from "../public/pic1.png";
-import quote from "../public/quote.png";
-import story from "../public/story.png";
+import { FaInstagram, FaQuoteRight } from "react-icons/fa";
 
-import { FaInstagram } from "react-icons/fa";
+import homeHero from "../public/assets/home-hero.png";
+import logo from "../public/assets/porlucoffee-logo.png";
+import product from "../public/assets/porlucoffee-product1.png"
+import quote from "../public/assets/quote.png"
+import story from "../public/assets/porlucoffee-story.png"
+import bestProduct from "../public/assets/product.jpg"
+import instagram from "../public/assets/instagram.png"
 
 export default function Home() {
   return (
@@ -18,35 +17,30 @@ export default function Home() {
       {/* sect 1 (hero) */}
       <main className="relative h-screen w-full overflow-hidden">
         <Image
-          src={heroBg}
+          src={homeHero}
           alt="Hero Background"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="z-0"
+          className="z-0 absolute inset-0 object-cover object-center w-full h-full"
+          priority
         />
 
         <div className="absolute inset-0 bg-black/65 z-10"></div>
 
         <div className="relative z-20 h-full flex flex-col justify-center items-start px-8 md:px-12 lg:px-32 text-white">
           <Image
-            src={logo2}
-            alt="PorluCoffee"
-            className="mb-4 rounded-full bg-black w-20 h-20 md:w-24 md:h-24 lg:h-28 lg:w-28 "
+            src={logo}
+            alt="PorluCoffee Logo"
+            className="mb-4 rounded-full bg-white w-20 h-20 md:w-24 md:h-24 lg:h-28 lg:w-28 "
           />
-
           <h1 className="text-3xl font-poppins md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow">
             Perfect Arabica,
           </h1>
           <h2 className="text-xl md:text-2xl lg:text-3xl font-poppins font-bold text-green-500 mb-4">
             From Doloksanggul, North Sumatera.
           </h2>
-
           <p className="md:text-lg lg:text-xl font-quicksand text-gray-100 max-w-2xl mb-8">
             PorluCoffee menawarkan kualitas dari kopi yang dipilih secara matang
             untuk menghadirkan pengalaman minum kopi yang sempurna setiap hari.
           </p>
-
           <Link href={"/products"}>
             <button className="bg-green-600 hover:bg-green-700 transition px-4 py-2 md:px-6 md:py-3 text-sm md:text-base cursor-pointer rounded-full font-poppins font-semibold text-white shadow-lg">
               Lihat Produk Kami
@@ -73,8 +67,8 @@ export default function Home() {
             makna dalam setiap cangkir.
           </p>
           <Image
-            src={pic1}
-            alt="PorluCoffee 1"
+            src={product}
+            alt="PorluCoffee Product"
             className="object-cover rounded-l-[50px] rounded-r-sm h-80 w-[100%] md:h-[27rem] md:w-[35rem] mt-5"
           />
         </div>
@@ -130,10 +124,10 @@ export default function Home() {
       <section className="bg-white flex flex-col md:flex-row-reverse justify-center gap-10 mt-20 md:px-16 lg:px-40 pt-32 pb-10 mb-20 md:mb-0 relative">
         <Image
           src={quote}
-          alt=""
+          alt="Quote"
           className="absolute top-20 right-10 md:top-12 md:left-32 w-20 h-20 object-contain"
         />
-
+ 
         <div className="px-5 md:p-0 md:w-[40%] flex flex-col">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 font-poppins mb-2">
             Our Story
@@ -142,6 +136,7 @@ export default function Home() {
             src={story}
             alt="People"
             className="self-center object-cover rounded-r-[50px] rounded-l-sm h-[22rem] w-[100%] md:h-[35rem] md:w-full mt-5"
+            loading="lazy"
           />
         </div>
         <div className="px-5 md:p-0 md:w-[60%]">
@@ -185,22 +180,22 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           {[
             {
-              img: product,
+              img: bestProduct,
               title: "House Blend",
               desc: "Campuran biji khas kami dengan rasa seimbang — nutty, caramel, dan sedikit fruity.",
             },
             {
-              img: product,
+              img: bestProduct,
               title: "Single Origin",
               desc: "Cita rasa murni dari satu wilayah, menawarkan karakteristik khas dan unik.",
             },
             {
-              img: product,
+              img: bestProduct,
               title: "Dark Roast",
               desc: "Rasa bold dan pekat, cocok untuk espresso lovers dan pecinta kopi kuat.",
             },
             {
-              img: product,
+              img: bestProduct,
               title: "Cold Brew Pack",
               desc: "Paket khusus untuk penyeduhan dingin di rumah — praktis dan menyegarkan.",
             },
@@ -245,7 +240,10 @@ export default function Home() {
       </svg>
 
       {/* sect 6 (address) */}
-      <section className="pb-20 mt-20 md:mt-0 px-5 md:px-10 lg:px-40" id="lokasi">
+      <section
+        className="pb-20 mt-20 md:mt-0 px-5 md:px-10 lg:px-40"
+        id="lokasi"
+      >
         <div className="flex items-center gap-5 mb-5">
           <h2 className="text-2xl md:text-4xl font-bold font-poppins text-gray-900 mb-4">
             Lokasi Kami
@@ -261,7 +259,7 @@ export default function Home() {
           <div className="p-5">
             <Image
               src={logo}
-              alt="Logo"
+              alt="PorluCoffee Logo"
               className="h-14 w-14 md:h-20 md:w-20 bg-white rounded-full mb-2"
             />
             <h3 className="text-lg md:text-xl font-semibold font-raleway text-gray-900 mb-1">
@@ -309,7 +307,7 @@ export default function Home() {
               className="h-24 w-24 md:h-28 md:w-28"
             />
             <Image
-              src={insta}
+              src={instagram}
               alt="Instagram Logo"
               className="h-3 w-3 md:h-6 md:w-6"
             />

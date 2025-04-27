@@ -1,33 +1,30 @@
 import React from "react";
 import Image from "next/image";
 
-import hero1 from "../../public/abt1.png";
-import hero2 from "../../public/abt3.png";
-import hero3 from "../../public/abt5.png";
-import defpic from "../../public/def-person.png";
+import abt1 from "../../public/assets/abt1.png"
+import abt3 from "../../public/assets/abt3.png"
+import abt5 from "../../public/assets/abt5.png"
+import defPerson from "../../public/assets/def-person.png"
 
 const AboutPage = () => {
   return (
     <>
-      <main className="pt-28 relative w-full min-h-[80vh] gap-10 flex flex-col bg-lime-100">
-        <div className="flex max-h-[25rem]">
+      <main className="pt-28 relative w-full min-h-[80vh] gap-10 flex flex-col bg-gray-100">
+        <div className="flex max-h-[27rem]">
           <Image
-            src={hero1}
-            alt="PorluCoffee"
+            src={abt1}
+            alt="Tentang Porlucoffee"
             className="object-cover w-[33%]"
-            loading="lazy"
           />
           <Image
-            src={hero3}
-            alt="PorluCoffee"
+            src={abt5}
+            alt="Tentang Porlucoffee"
             className="object-cover w-[33%] grow"
-            loading="lazy"
           />
           <Image
-            src={hero2}
-            alt="PorluCoffee"
+            src={abt3}
+            alt="Tentang Porlucoffee"
             className="object-cover w-[33%]"
-            loading="lazy"
           />
         </div>
         <div className="flex flex-col items-center gap-5">
@@ -54,7 +51,7 @@ const AboutPage = () => {
       >
         <defs>
           <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-            <stop stopColor="#ecfccb" offset="100%"></stop>
+            <stop stopColor="#F3F4F6" offset="100%"></stop>
           </linearGradient>
         </defs>
         <path
@@ -152,7 +149,7 @@ const AboutPage = () => {
 
       <section
         className="mt-48 min-h-[60vh] flex flex-col bg-cover bg-no-repeat bg-center px-10 md:px-16 lg:px-32 py-20"
-        style={{ backgroundImage: `url(/bgabt.jpg)` }}
+        style={{ backgroundImage: `url(/assets/bgabt.jpg)` }}
       >
         <h1 className="text-center md:text-left font-bold font-poppins text-2xl md:text-3xl lg:text-4xl text-amber-950 mb-10 md:mb-24">
           People behind PorluCoffee
@@ -161,7 +158,7 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-16">
           <div className="flex flex-col pl-16 md:pl-24 pr-2 py-5 relative bg-emerald-100 border-2 border-amber-200 rounded-xl mt-8">
             <Image
-              src={defpic}
+              src={defPerson}
               alt="default pic"
               className="absolute h-20 w-20 lg:h-32 lg:w-32 -top-8 -left-6 lg:-top-14 lg:-left-10"
             />
@@ -174,7 +171,7 @@ const AboutPage = () => {
           </div>
           <div className="flex flex-col pl-16 md:pl-24 pr-2 py-5 relative bg-emerald-100 border-2 border-amber-200 rounded-xl mt-8">
             <Image
-              src={defpic}
+              src={defPerson}
               alt="default pic"
               className="absolute h-20 w-20 lg:h-32 lg:w-32 -top-8 -left-6 lg:-top-14 lg:-left-10"
             />
@@ -187,7 +184,7 @@ const AboutPage = () => {
           </div>
           <div className="flex flex-col pl-16 md:pl-24 pr-2 py-5 relative bg-emerald-100 border-2 border-amber-200 rounded-xl mt-8">
             <Image
-              src={defpic}
+              src={defPerson}
               alt="default pic"
               className="absolute h-20 w-20 lg:h-32 lg:w-32 -top-8 -left-6 lg:-top-14 lg:-left-10"
             />

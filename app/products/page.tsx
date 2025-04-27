@@ -1,9 +1,9 @@
-import React from "react";
 import Image from "next/image";
 
-import prhero from "../../public/prhero.png";
-import logo from "../../public/logo.png";
 import ProductTabs from "../components/ProductTabs";
+import productHero from "../../public/assets/product-hero.png"
+import logo from "../../public/assets/porlucoffee-logo.png"
+
 
 const ProductPage = () => {
   return (
@@ -11,17 +11,16 @@ const ProductPage = () => {
       <main className="pt-24 relative w-full flex justify-center px-4 mb-12 md:mb-5 xl:mb-0">
         <div className="relative w-full h-[30rem] lg:w-[80rem] lg:h-[20rem] rounded-lg overflow-hidden">
           <Image
-            src={prhero}
+            src={productHero}
             alt="Hero Background"
-            fill
-            quality={100}
-            className="object-cover"
+            className="object-cover w-full h-full object-center"
+            priority
           />
           <div className="absolute inset-0 bg-white/75 z-10" />
           <div className="absolute inset-0 flex flex-col gap-2 md:flex-row md:gap-5 items-center justify-center z-20">
             <Image
               src={logo}
-              alt="Logo Porlucoffee"
+              alt="PorluCoffee Logo"
               className="w-24 h-24 lg:w-36 lg:h-36 rounded-full bg-white"
             />
             <div className="bg-green-900 w-1 h-32 hidden md:inline"></div>
@@ -72,7 +71,7 @@ const ProductPage = () => {
             y2="0"
           >
             <stop
-              stopColor="#fde68a
+              stopColor="#BFDBFE
 "
               offset="0%"
             ></stop>

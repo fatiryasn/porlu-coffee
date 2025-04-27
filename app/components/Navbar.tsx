@@ -1,15 +1,20 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { usePathname } from "next/navigation";
 
-import logo from "../../public/logo.png";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineShoppingBag, MdOutlinePeople } from "react-icons/md";
-import { RxHamburgerMenu } from "react-icons/rx";
+import Image from "next/image";
 import { HiOutlineXMark } from "react-icons/hi2";
+import { TbCirclesRelation } from "react-icons/tb";
+import { MdConnectWithoutContact } from "react-icons/md";
+
+import logo from "../../public/assets/porlucoffee-logo.png"
+import textLogo from "../../public/assets/porlucoffee-text-logo.png"
+import textLogoWhite from "../../public/assets/porlucoffee-text-logo-white.png"
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -28,63 +33,65 @@ const Navbar = () => {
 
   const navbarStyle = isHome
     ? scrolled
-      ? "bg-[#f6faf5] text-black"
-      : "bg-transparent text-white"
-    : "bg-[#f6faf5] text-black";
-
-  const textTitleStyle = isHome
-    ? scrolled
-      ? "text-green-800"
-      : "text-gray-50"
-    : "text-green-800";
+      ? "bg-[#f6faf5] text-emerald-900"
+      : "bg text-gray-100"
+    : "bg-[#f6faf5] text-emerald-900";
 
   const logoStyle = isHome ? (scrolled ? "" : "bg-white rounded-full") : "";
 
   return (
     <>
       <div
-        className={`fixed top-0 right-0 left-0 z-30 flex justify-between md:justify-center items-center md:gap-32 p-4 transition-all duration-300 ${navbarStyle}`}
+        className={`fixed top-0 right-0 left-0 z-30 flex justify-between md:justify-center items-center md:gap-20 p-4 transition-all duration-300 ${navbarStyle}`}
       >
         <div className="flex justify-center items-center gap-1 md:gap-2">
           <Image
             src={logo}
-            alt="PorluCoffee"
-            className={`w-8 h-8 md:w-12 md:h-12 ${logoStyle}`}
-            loading="lazy"
+            alt="PorluCoffee Logo"
+            className={`w-10 h-10 md:w-12 md:h-12 ${logoStyle}`}
           />
-          <h1
-            className={`font-raleway font-semibold text-sm md:text-lg ${textTitleStyle}`}
-          >
-            PorluCoffee
-          </h1>
+          <Image
+            src={isHome ? (scrolled ? textLogo : textLogoWhite) : textLogo}
+            alt="PorluCoffe Text Logo"
+            className={`w-10 h-10 object-contain md:w-16 md:h-13 `}
+          />
         </div>
 
-        <nav className="hidden sm:flex justify-center items-center gap-8">
+        <nav className="hidden md:flex justify-center items-center gap-6">
           <Link
             href="/"
-            className="font-quicksand flex items-center gap-1 hover:underline md:text-lg"
+            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
           >
-            <AiOutlineHome />
             <span>Beranda</span>
           </Link>
           <Link
             href="/products"
-            className="font-quicksand flex items-center gap-1 hover:underline md:text-lg"
+            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
           >
-            <MdOutlineShoppingBag />
             <span>Produk</span>
           </Link>
           <Link
             href="/about"
-            className="font-quicksand flex items-center gap-1 hover:underline md:text-lg"
+            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
           >
-            <MdOutlinePeople />
             <span>Tentang Kami</span>
+          </Link>
+          <Link
+            href="/collaborate"
+            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
+          >
+            <span>Kolaborasi</span>
+          </Link>
+          <Link
+            href="/contact"
+            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
+          >
+            <span>Kontak</span>
           </Link>
         </nav>
 
         <button
-          className="inline sm:hidden text-2xl"
+          className="inline md:hidden text-2xl"
           onClick={() => setIsSidebarOpen(true)}
         >
           <RxHamburgerMenu />
@@ -133,6 +140,22 @@ const Navbar = () => {
           >
             <MdOutlinePeople />
             <span>Tentang Kami</span>
+          </Link>
+          <Link
+            href="/collaborate"
+            onClick={() => setIsSidebarOpen(false)}
+            className="flex items-center gap-2"
+          >
+            <TbCirclesRelation />
+            <span>Kolaborasi</span>
+          </Link>
+          <Link
+            href="/contact"
+            onClick={() => setIsSidebarOpen(false)}
+            className="flex items-center gap-2"
+          >
+            <MdConnectWithoutContact />
+            <span>Kontak</span>
           </Link>
         </nav>
       </aside>

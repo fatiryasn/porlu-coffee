@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import product from "../../public/pic1.png";
 
-import bestsel from "../../public/best-seller.png"
-import newar from "../../public/new-arr.png"
+import bestSeller from "../../public/assets/best-seller.png";
+import newArrival from "../../public/assets/new-arrival.png";
+import product from "../../public/assets/porlucoffee-product1.png";
 
 const products = Array.from({ length: 20 }, (_, i) => ({
   id: i + 1,
@@ -41,7 +41,7 @@ const ProductTabs = () => {
     categories.find((cat) => cat.value === activeTab)?.label || "";
 
   return (
-    <section className="flex flex-col md:flex-row justify-center gap-10 xl:gap-20 px-4 md:px-6 bg-gradient-to-b from-green-200 to-amber-200">
+    <section className="flex flex-col md:flex-row justify-center gap-10 xl:gap-20 px-4 md:px-6 bg-gradient-to-b from-green-200 to-blue-200">
       <aside className="md:sticky top-36 h-fit">
         <ul className="bg-gray-50 p-2 rounded-sm md:bg-transparent flex items-center justify-center md:flex-col gap-3 md:items-end">
           {categories.map((cat) => (
@@ -68,7 +68,7 @@ const ProductTabs = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-1 md:gap-3 xl:gap-8">
           {filteredProducts.map((product) => (
             <div
-              className="flex flex-col lg:flex-row gap-2 lg:gap-5 relative rounded-lg bg-gray-50 p-2 md:p-3 shadow-sm"
+              className="flex flex-col lg:flex-row gap-2 lg:gap-5 relative rounded-lg bg-gray-50/70 p-2 md:p-3 shadow-sm hover:bg-gray-50 hover:scale-[101%] hover:translate-y-[-5px] transition"
               key={product.id}
             >
               <Image
@@ -78,7 +78,7 @@ const ProductTabs = () => {
               />
               {product.category === "best-seller" && (
                 <Image
-                  src={bestsel}
+                  src={bestSeller}
                   alt="Best Seller"
                   className="absolute top-0 left-0 w-16 h-16 md:w-24 md:h-24  z-10 rotate-[-10deg]"
                 />
@@ -86,7 +86,7 @@ const ProductTabs = () => {
 
               {product.category === "new-arrival" && (
                 <Image
-                  src={newar}
+                  src={newArrival}
                   alt="New Arrival"
                   className="absolute top-0 left-0 w-16 h-16 md:w-24 md:h-24  z-10 rotate-[-10deg]"
                 />

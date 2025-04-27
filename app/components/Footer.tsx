@@ -1,30 +1,29 @@
 import React from "react";
-import logo from "../../public/logo.png";
-import Image from "next/image";
-import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
+
+import { FaInstagram } from "react-icons/fa";
+import logo from "../../public/assets/porlucoffee-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="mt-96 px-8 md:px-32 pb-5 pt-24 bg-green-900 text-white">
+    <footer className="px-8 mt-16 md:px-32 pb-5 pt-24 bg-green-900 text-white">
       <div className="flex flex-col md:flex-row items-center justify-between gap-16">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <Image
             src={logo}
-            alt="PorluCoffee"
-            className="bg-white rounded-full border-[0.2px] border-gray-200"
-            width={120}
-            height={120}
+            alt="PorluCoffee Logo"
+            className="bg-white rounded-full border-[0.2px] border-gray-200 w-28 h-28 md:w-36 md:h-36 lg:w-40 lg:h-40"
           />
           <p className="mt-4 text-sm text-gray-200 max-w-sm font-quicksand">
-            PorluCoffee adalah tempat terbaik untuk menikmati kopi asli yang kaya
-            akan cita rasa dan budaya.
+            PorluCoffee adalah tempat terbaik untuk menikmati kopi asli yang
+            kaya akan cita rasa dan budaya.
           </p>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold mb-4 font-raleway">Navigasi</h3>
-          <ul className="space-y-2 text-gray-200 text-sm">
+          <ul className="space-y-2 text-gray-200 font-quicksand text-sm">
             <li>
               <Link href="/" className="hover:underline">
                 Beranda
@@ -47,7 +46,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4 font-raleway">
             Hubungi Kami
           </h3>
-          <ul className="text-gray-200 text-sm space-y-2">
+          <ul className="text-gray-200 text-sm font-quicksand space-y-2">
             <li>Email: info@porlucoffee.id</li>
             <li>Telepon: +62 812 3456 7890</li>
             <li>Alamat: Jl. Raya Mandailing No.10</li>
@@ -55,7 +54,9 @@ const Footer = () => {
         </div>
 
         <div className="text-center">
-          <h3 className="text-xl font-semibold mb-4 font-raleway">Ikuti Kami</h3>
+          <h3 className="text-xl font-semibold mb-4 font-raleway">
+            Ikuti Kami
+          </h3>
           <div className="flex justify-center gap-4 text-2xl">
             <a
               href="https://www.instagram.com/porlucoffee"
