@@ -33,9 +33,9 @@ const Navbar = () => {
 
   const navbarStyle = isHome
     ? scrolled
-      ? "bg-[#f6faf5] text-emerald-900"
+      ? "bg-[#f6faf5] text-emerald-950"
       : "bg text-gray-100"
-    : "bg-[#f6faf5] text-emerald-900";
+    : "bg-[#f6faf5] text-emerald-950";
 
   const logoStyle = isHome ? (scrolled ? "" : "bg-white rounded-full") : "";
 
@@ -57,34 +57,34 @@ const Navbar = () => {
           />
         </div>
 
-        <nav className="hidden md:flex justify-center items-center gap-6">
+        <nav className="hidden md:flex justify-center items-center gap-6 font-jura">
           <Link
             href="/"
-            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
+            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
           >
             <span>Beranda</span>
           </Link>
           <Link
             href="/products"
-            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
+            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
           >
             <span>Produk</span>
           </Link>
           <Link
             href="/about"
-            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
+            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
           >
             <span>Tentang Kami</span>
           </Link>
           <Link
             href="/collaborate"
-            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
+            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
           >
             <span>Kolaborasi</span>
           </Link>
           <Link
             href="/contact"
-            className="font-outfit font-medium flex items-center gap-1 hover:underline md:text-lg"
+            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
           >
             <span>Kontak</span>
           </Link>
@@ -116,7 +116,7 @@ const Navbar = () => {
             <HiOutlineXMark />
           </button>
         </div>
-        <nav className="flex flex-col gap-4 p-4 text-base font-quicksand">
+        <nav className="flex flex-col gap-4 p-4 text-base font-jura">
           <Link
             href="/"
             onClick={() => setIsSidebarOpen(false)}

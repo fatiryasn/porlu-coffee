@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { FaInstagram} from "react-icons/fa";
 
-import homeHero from "../public/assets/home-hero.png";
+import homeHero from "../public/assets/abt5.png";
 import logo from "../public/assets/porlucoffee-logo.png";
 import product from "../public/assets/porlucoffee-product1.png"
 import quote from "../public/assets/quote.png"
@@ -15,15 +15,15 @@ export default function Home() {
   return (
     <>
       {/* sect 1 (hero) */}
-      <main className="relative h-screen w-full overflow-hidden">
+      <main className="relative h-[100dvh] w-full overflow-hidden">
         <Image
           src={homeHero}
           alt="Hero Background"
-          className="z-0 absolute inset-0 object-cover object-center w-full h-full"
+          className="z-0 absolute inset-0 object-cover object-center lg:object-right-bottom w-full h-full"
           priority
         />
 
-        <div className="absolute inset-0 bg-black/65 z-10"></div>
+        <div className="absolute inset-0 bg-black/70 z-10"></div>
 
         <div className="relative z-20 h-full flex flex-col justify-center items-start px-8 md:px-12 lg:px-32 text-white">
           <Image
@@ -31,13 +31,13 @@ export default function Home() {
             alt="PorluCoffee Logo"
             className="mb-4 rounded-full bg-white w-20 h-20 md:w-24 md:h-24 lg:h-28 lg:w-28 "
           />
-          <h1 className="text-3xl font-poppins md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow">
+          <h1 className="text-4xl font-kaushan md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow">
             Perfect Arabica,
           </h1>
           <h2 className="text-xl md:text-2xl lg:text-3xl font-poppins font-bold text-green-500 mb-4">
             From Doloksanggul, North Sumatera.
           </h2>
-          <p className="md:text-lg lg:text-xl font-quicksand text-gray-100 max-w-2xl mb-8">
+          <p className="md:text-lg lg:text-xl font-jura text-gray-100 max-w-2xl mb-8">
             PorluCoffee menawarkan kualitas dari kopi yang dipilih secara matang
             untuk menghadirkan pengalaman minum kopi yang sempurna setiap hari.
           </p>
@@ -59,10 +59,10 @@ export default function Home() {
       {/* sect 2 (whys) */}
       <section className="bg-white flex flex-col md:flex-row justify-center gap-10 mt-20 md:mt-0 p-5 ">
         <div className="flex flex-col md:items-stretch">
-          <h2 className="text-3xl text-end md:text-left md:text-3xl lg:text-4xl font-bold font-poppins text-gray-800 mb-2">
-            Why Choose PorluCoffee?
+          <h2 className="text-3xl text-end md:text-left md:text-4xl lg:text-[2.5rem] font-bold font-kaushan text-gray-800 mb-2">
+            Why PorluCoffee?
           </h2>
-          <p className="text-gray-800 text-sm text-end md:text-left md:text-base lg:text-lg md:max-w-xl font-quicksand">
+          <p className="text-gray-800 text-sm text-end md:text-left md:text-base lg:text-lg md:max-w-xl font-jura">
             Kami tidak sekadar menyajikan kopi — tapi juga cerita, rasa, dan
             makna dalam setiap cangkir.
           </p>
@@ -76,7 +76,7 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 md:w-[50%]">
           <div className="bg-gray-100 p-3 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition">
             <div className="text-2xl md:text-4xl text-green-700 mb-4">🌱</div>
-            <h3 className="text-lg md:text-xl font-semibold mb-2 font-raleway">
+            <h3 className="text-xl md:text-2xl font-semibold mb-2 font-grenze">
               Sangrai Segar
             </h3>
             <p className="text-gray-800 text-sm font-quicksand">
@@ -87,7 +87,7 @@ export default function Home() {
 
           <div className="bg-gray-100 p-3 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition">
             <div className="text-2xl md:text-4xl text-green-700 mb-4">☕</div>
-            <h3 className="text-lg md:text-xl font-semibold mb-2 font-raleway">
+            <h3 className="text-xl md:text-2xl font-semibold mb-2 font-grenze">
               Rasa Kaya & Berani
             </h3>
             <p className="text-gray-800 text-sm font-quicksand">
@@ -98,7 +98,7 @@ export default function Home() {
 
           <div className="bg-gray-100 p-3 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition">
             <div className="text-2xl md:text-4xl text-green-700 mb-4">🌍</div>
-            <h3 className="text-lg md:text-xl font-semibold mb-2 font-raleway">
+            <h3 className="text-xl md:text-2xl font-semibold mb-2 font-grenze">
               Praktik Berkelanjutan
             </h3>
             <p className="text-gray-800 text-sm font-quicksand">
@@ -109,7 +109,7 @@ export default function Home() {
 
           <div className="bg-gray-100 p-3 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition">
             <div className="text-2xl md:text-4xl text-green-700 mb-4">📦</div>
-            <h3 className="text-lg md:text-xl font-semibold mb-2 font-raleway">
+            <h3 className="text-xl md:text-2xl font-semibold mb-2 font-grenze">
               Pengiriman Seluruh Indonesia
             </h3>
             <p className="text-gray-800 text-sm font-quicksand">
@@ -127,9 +127,9 @@ export default function Home() {
           alt="Quote"
           className="absolute top-20 right-10 md:top-12 md:left-32 w-20 h-20 object-contain"
         />
- 
+
         <div className="px-5 md:p-0 md:w-[40%] flex flex-col">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 font-poppins mb-2">
+          <h2 className="text-4xl md:text-[2.5rem] font-bold text-gray-800 font-kaushan mb-2">
             Our Story
           </h2>
           <Image
@@ -165,13 +165,13 @@ export default function Home() {
           d="M0,224L120,229.3C240,235,480,245,720,245.3C960,245,1200,235,1320,229.3L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
         ></path>
       </svg>
-      <section className="bg-gradient-to-b from-green-200 to-emerald-400 py-20 md:py-5 px-6 md:px-12 lg:px-32">
+      <section className="bg-gradient-to-b from-green-200 to-blue-300 py-20 md:py-5 px-6 md:px-12 lg:px-32">
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-4xl font-poppins font-bold text-gray-800 mb-2 md:mb-4">
+          <h2 className="text-2xl md:text-4xl font-kaushan font-bold text-gray-800 mb-2 md:mb-4">
             Best of{" "}
-            <span className="font-raleway text-green-800">PorluCoffee</span>
+            <span className="font-raleway text-green-900">PorluCoffee</span>
           </h2>
-          <p className="text-gray-900 font-quicksand text-sm md:text-lg max-w-xl mx-auto">
+          <p className="text-gray-900 font-jura text-sm md:text-lg max-w-xl mx-auto">
             Pilihan terbaik untuk pecinta kopi sejati — setiap biji dipilih
             dengan cermat, demi rasa yang tak terlupakan.
           </p>
@@ -225,7 +225,7 @@ export default function Home() {
         </div>
         <div className="mt-10 flex justify-center items-center">
           <Link href="/products">
-            <button className="text-gray-50 bg-green-700 rounded-xl hover:bg-green-900 transition cursor-pointer font-raleway font-semibold px-5 py-3">
+            <button className="text-gray-50 bg-green-700 rounded-xl hover:bg-green-900 transition cursor-pointer font-poppins font-semibold px-5 py-3">
               Lihat lebih banyak
             </button>
           </Link>
@@ -233,7 +233,7 @@ export default function Home() {
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="oklch(76.5% 0.177 163.223)"
+          fill="#93C5FD"
           fillOpacity="1"
           d="M0,96L120,90.7C240,85,480,75,720,85.3C960,96,1200,128,1320,144L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
         ></path>
@@ -245,17 +245,17 @@ export default function Home() {
         id="lokasi"
       >
         <div className="flex items-center gap-5 mb-5">
-          <h2 className="text-2xl md:text-4xl font-bold font-poppins text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold font-kaushan text-gray-900 mb-4">
             Lokasi Kami
           </h2>
           <div className="w-32 h-[3px] bg-green-700"></div>
-          <p className="text-gray-900 font-quicksand text-sm md:text-lg max-w-lg">
+          <p className="text-gray-900 font-jura text-sm md:text-lg max-w-lg">
             Kunjungi langsung kedai kami untuk merasakan aroma dan cita rasa
             kopi pilihan secara langsung.
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row-reverse bg-emerald-100 md:bg-emerald-200 border-[0.2px] border-green-800 md:p-5 rounded-xl justify-center lg:gap-10">
+        <div className="flex flex-col md:flex-row-reverse bg-green-200 border-[0.2px] border-green-800 md:p-5 rounded-xl justify-center lg:gap-10">
           <div className="p-5">
             <Image
               src={logo}

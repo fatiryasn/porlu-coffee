@@ -9,7 +9,7 @@ const ProductPage = () => {
   return (
     <>
       <main className="pt-24 relative w-full flex justify-center px-4 mb-12 md:mb-5 xl:mb-0">
-        <div className="relative w-full h-[30rem] lg:w-[80rem] lg:h-[20rem] rounded-lg overflow-hidden">
+        <div className="relative w-full h-[30rem] md:w-[80rem] sm:h-[20rem] rounded-lg overflow-hidden">
           <Image
             src={productHero}
             alt="Hero Background"
@@ -28,7 +28,7 @@ const ProductPage = () => {
               <h1 className="text-green-900 text-[2.5rem] lg:text-[4.5rem] font-poppins font-bold">
                 Products
               </h1>
-              <p className="tracking-[0.5em] text-lg lg:tracking-[1em] ml-2 lg:text-2xl font-quicksand font-medium">
+              <p className="tracking-[0.5em] text-lg lg:tracking-[1em] ml-2 lg:text-2xl font-jura font-medium">
                 PORLUCOFFEE
               </p>
             </div>

@@ -89,7 +89,7 @@ const CollabForm = () => {
         <h2 className="text-4xl text-center md:text-left text-amber-950 font-outfit font-semibold mb-1">
           Jadi Partner Kami!
         </h2>
-        <p className="font-raleway text-center md:text-left text-sm md:text-base lg:text-xl text-gray-700 font-light mb-10">
+        <p className="font-quicksand text-center md:text-left text-sm md:text-base lg:text-xl text-gray-700 font-light mb-10">
           Mari menciptakan ide dan inovasi bersama PorluCoffee.
         </p>
         <form

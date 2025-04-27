@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import abt1 from "../../public/assets/abt1.png"
-import abt3 from "../../public/assets/abt3.png"
-import abt5 from "../../public/assets/abt5.png"
-import defPerson from "../../public/assets/def-person.png"
+import abt1 from "../../public/assets/abt1.png";
+import abt3 from "../../public/assets/abt3.png";
+import abt5 from "../../public/assets/abt5.png";
+import defPerson from "../../public/assets/def-person.png";
 
 const AboutPage = () => {
   return (
@@ -29,14 +29,14 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col items-center gap-5">
           <h1 className="">
-            <span className="font-quicksand text-gray-800 text-lg md:text-xl lg:text-2xl uppercase font-medium tracking-[0.6em]">
+            <span className="font-jura text-gray-800 text-lg md:text-xl lg:text-2xl uppercase font-medium tracking-[0.6em]">
               About
             </span>{" "}
             <span className="text-3xl md:text-4xl lg:text-5xl font-bold font-raleway text-green-900">
               PorluCoffee
             </span>
           </h1>
-          <p className="px-5 md:px-0 max-w-xl font-quicksand md:text-lg lg:text-xl leading-loose font-medium text-gray-700 text-center">
+          <p className="px-5 md:px-0 max-w-xl font-jura md:text-lg lg:text-xl leading-loose font-medium text-gray-700 text-center">
             Ayo cari tahu bagaimana perjalanan PorluCoffee dan mari berkenalan
             dengan kami!
           </p>
@@ -112,33 +112,40 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/*v&m*/}
-      <section className="flex flex-col items-center mt-48 px-5 md:px-10 lg:px-24 gap-16">
-        <div className="flex flex-col items-center gap-2">
-          <div className="h-1 w-20 bg-green-900"></div>
-          <h1 className="text-xl md:text-3xl lg:text-4xl font-bold font-poppins text-center">
-            Visi & Misi PorluCoffee
+      {/* Visi & Misi */}
+      <section className="flex flex-col items-center mt-48 px-6 md:px-12 lg:px-24 gap-20">
+        <div className="flex flex-col items-center gap-4">
+          <div className="h-1 w-24 bg-gradient-to-r from-emerald-700 via-green-800 to-emerald-700 rounded-full"></div>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold font-raleway text-center text-green-900">
+            <span className="font-kaushan text-gray-800">Visi & Misi</span>{" "}
+            PorluCoffee
           </h1>
-          <div className="h-1 w-32 bg-green-900"></div>
+          <div className="h-1 w-40 bg-gradient-to-r from-emerald-700 via-green-800 to-emerald-700 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 max-w-5xl">
-          <div className="bg-gradient-to-tr from-emerald-100 to-amber-100 p-6 rounded-xl text-center shadow-[-10px_10px_3px_#85ab9c]">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-raleway font-semibold mb-4 text-green-900">
-              Visi
-            </h2>
-            <p className="text-gray-800 font-quicksand md:text-lg lg:text-xl font-medium leading-relaxed">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full">
+          {/* Visi */}
+          <div className="relative bg-green-500/20 backdrop-blur-md rounded-3xl p-10 shadow-lg hover:scale-[101%] hover:translate-y-[-5px] transition border border-emerald-400/50">
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+              <div className="bg-gradient-to-r from-green-700 to-emerald-500 text-white uppercase font-jura px-6 py-2 rounded-full text-lg font-semibold shadow-lg">
+                Visi
+              </div>
+            </div>
+            <p className="font-quicksand md:text-lg lg:text-xl font-medium leading-relaxed mt-4 text-center">
               Menjadi brand kopi lokal asal Doloksanggul yang dikenal secara
               global, dengan tetap menjunjung tinggi kualitas, kearifan lokal,
               dan keberlanjutan dalam setiap prosesnya.
             </p>
           </div>
 
-          <div className="bg-gradient-to-tl from-emerald-100 to-amber-100 p-6 rounded-xl text-center shadow-[10px_10px_3px_#85ab9c]">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-raleway font-semibold mb-4 text-green-900">
-              Misi
-            </h2>
-            <p className="text-gray-800 font-quicksand  md:text-lg lg:text-xl font-medium leading-relaxed">
+          {/* Misi */}
+          <div className="relative bg-green-500/20 backdrop-blur-md rounded-3xl p-10 shadow-lg hover:scale-[101%] hover:translate-y-[-5px] transition border border-emerald-400/50">
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+              <div className="bg-gradient-to-r from-amber-600 to-yellow-400 text-white uppercase font-jura px-6 py-2 rounded-full text-lg font-semibold shadow-lg">
+                Misi
+              </div>
+            </div>
+            <p className=" font-quicksand md:text-lg lg:text-xl font-medium leading-relaxed mt-4 text-center">
               Menyajikan kopi terbaik dari dataran tinggi Sumatera Utara dengan
               menjaga keaslian cita rasa, serta memperkenalkan kopi tanah Batak
               ke dunia melalui produk yang otentik dan bermakna.
@@ -147,52 +154,64 @@ const AboutPage = () => {
         </div>
       </section>
 
+      {/* founders */}
       <section
-        className="mt-48 min-h-[60vh] flex flex-col bg-cover bg-no-repeat bg-center px-10 md:px-16 lg:px-32 py-20"
-        style={{ backgroundImage: `url(/assets/bgabt.jpg)` }}
+        className="mt-48 min-h-[70vh] flex flex-col bg-cover bg-no-repeat bg-center px-10 md:px-16 lg:px-32 py-20"
+        style={{ backgroundImage: "url(/assets/bgabt.jpg)" }}
       >
-        <h1 className="text-center md:text-left font-bold font-poppins text-2xl md:text-3xl lg:text-4xl text-amber-950 mb-10 md:mb-24">
-          People behind PorluCoffee
-        </h1>
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold font-grenze">Our Founders</h2>
+          <p className="text-gray-900 mt-2 text-lg font-jura">
+            The passionate team behind PorluCoffee
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-16">
-          <div className="flex flex-col pl-16 md:pl-24 pr-2 py-5 relative bg-emerald-100 border-2 border-amber-200 rounded-xl mt-8">
+        <div className="grid gap-10 md:grid-cols-3">
+          <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
             <Image
               src={defPerson}
-              alt="default pic"
-              className="absolute h-20 w-20 lg:h-32 lg:w-32 -top-8 -left-6 lg:-top-14 lg:-left-10"
+              alt="Founder PorluCoffee"
+              className="w-40 h-40 object-cover rounded-full mb-6 border-4 border-white shadow-md"
             />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-raleway">
-              Lorem Ipsum
-            </h3>
-            <p className="font-medium text-xs md:text-sm lg:text-base font-quicksand text-gray-700">
+            <h3 className="text-3xl font-kaushan">Lorem Ipsum</h3>
+            <p className="text-gray-900 mt-2 font-raleway font-medium">
               Co-Founder
             </p>
-          </div>
-          <div className="flex flex-col pl-16 md:pl-24 pr-2 py-5 relative bg-emerald-100 border-2 border-amber-200 rounded-xl mt-8">
-            <Image
-              src={defPerson}
-              alt="default pic"
-              className="absolute h-20 w-20 lg:h-32 lg:w-32 -top-8 -left-6 lg:-top-14 lg:-left-10"
-            />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-raleway">
-              Lorem Ipsum
-            </h3>
-            <p className="font-medium text-xs md:text-sm lg:text-base font-quicksand text-gray-700">
-              Founder
+            <p className="text-gray-900 mt-4 font-quicksand text-center text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
+              dignissimos fuga at
             </p>
           </div>
-          <div className="flex flex-col pl-16 md:pl-24 pr-2 py-5 relative bg-emerald-100 border-2 border-amber-200 rounded-xl mt-8">
+
+          <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
             <Image
               src={defPerson}
-              alt="default pic"
-              className="absolute h-20 w-20 lg:h-32 lg:w-32 -top-8 -left-6 lg:-top-14 lg:-left-10"
+              alt="Founder PorluCoffee"
+              className="w-40 h-40 object-cover rounded-full mb-6 border-4 border-white shadow-md"
             />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-raleway">
-              Lorem Ipsum
-            </h3>
-            <p className="font-medium text-xs md:text-sm lg:text-base font-quicksand text-gray-700">
+            <h3 className="text-3xl font-kaushan">Lorem Ipsum</h3>
+            <p className="text-gray-900 mt-2 font-raleway font-medium">
+              Founder & CEO
+            </p>
+            <p className="text-gray-900 mt-4 font-quicksand text-center text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
+              dignissimos fuga at
+            </p>
+          </div>
+
+          <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
+            <Image
+              src={defPerson}
+              alt="Founder PorluCoffee"
+              className="w-40 h-40 object-cover rounded-full mb-6 border-4 border-white shadow-md"
+            />
+            <h3 className="text-3xl font-kaushan">Lorem Ipsum</h3>
+            <p className="text-gray-900 mt-2 font-raleway font-medium">
               Co-Founder
+            </p>
+            <p className="text-gray-900 mt-4 font-quicksand text-center text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
+              dignissimos fuga at
             </p>
           </div>
         </div>
