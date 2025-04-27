@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Raleway, Quicksand, Outfit, Jura, Kaushan_Script, Oregano, Grenze } from "next/font/google";
+import { Poppins, Raleway, Quicksand, Outfit, Jura, Kaushan_Script, Grenze } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
