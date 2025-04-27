@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { FaInstagram, FaQuoteRight } from "react-icons/fa";
+import { FaInstagram} from "react-icons/fa";
 
 import homeHero from "../public/assets/home-hero.png";
 import logo from "../public/assets/porlucoffee-logo.png";
