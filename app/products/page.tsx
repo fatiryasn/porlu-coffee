@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { Metadata } from "next";
 
 import ProductTabs from "../components/ProductTabs";
 import productHero from "../../public/assets/product-hero.png"
 import logo from "../../public/assets/porlucoffee-logo.png"
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Products - PorluCoffee",

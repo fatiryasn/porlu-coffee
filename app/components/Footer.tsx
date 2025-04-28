@@ -39,6 +39,16 @@ const Footer = () => {
                 Produk
               </Link>
             </li>
+            <li>
+              <Link href="/collaborate" className="hover:underline">
+                Kolaborasi
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:underline">
+                Kontak
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -47,8 +57,7 @@ const Footer = () => {
             Hubungi Kami
           </h3>
           <ul className="text-gray-200 text-sm font-quicksand space-y-2">
-            <li>Email: info@porlucoffee.id</li>
-            <li>Telepon: +62 812 3456 7890</li>
+            <li>Email: porlucoffee@gmail.com</li>
             <li>Alamat: Jl. Raya Mandailing No.10</li>
           </ul>
         </div>

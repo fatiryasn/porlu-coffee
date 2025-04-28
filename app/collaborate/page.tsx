@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { Metadata } from "next";
 
 import collabHero from "../../public/assets/collab-hero.jpg"
 import CollabForm from "../components/CollabForm";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Collaboration - PorluCoffee",

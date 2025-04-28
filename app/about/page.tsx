@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import { Metadata } from "next";
 
 import abt1 from "../../public/assets/abt1.png";
 import abt3 from "../../public/assets/abt3.png";
 import abt5 from "../../public/assets/abt5.png";
-import defPerson from "../../public/assets/def-person.png";
-import { Metadata } from "next";
+import founder from "../../public/assets/founder.jpg"
 
 export const metadata: Metadata = {
   title: "About - PorluCoffee",
@@ -166,58 +166,22 @@ const AboutPage = () => {
         style={{ backgroundImage: "url(/assets/bgabt.jpg)" }}
       >
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold font-grenze">Our Founders</h2>
+          <h2 className="text-5xl font-bold font-grenze">The Founder</h2>
           <p className="text-gray-900 mt-2 text-lg font-jura">
-            The passionate team behind PorluCoffee
+            The passionate person behind PorluCoffee
           </p>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-3">
-          <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
+        <div className="flex flex-col md:flex-row justify-center gap-20">
+          <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 md:w-lg flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
             <Image
-              src={defPerson}
-              alt="Founder PorluCoffee"
-              className="w-40 h-40 object-cover rounded-full mb-6 border-4 border-white shadow-md"
+              src={founder}
+              alt="Founder PorluCoffee - Muhammad Aslam Fikri"
+              className="w-40 h-40 md:w-52 md:h-52 object-cover rounded-full mb-6 border-4 border-white shadow-md"
             />
-            <h3 className="text-3xl font-kaushan">Lorem Ipsum</h3>
-            <p className="text-gray-900 mt-2 font-raleway font-medium">
-              Co-Founder
-            </p>
-            <p className="text-gray-900 mt-4 font-quicksand text-center text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
-              dignissimos fuga at
-            </p>
-          </div>
-
-          <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
-            <Image
-              src={defPerson}
-              alt="Founder PorluCoffee"
-              className="w-40 h-40 object-cover rounded-full mb-6 border-4 border-white shadow-md"
-            />
-            <h3 className="text-3xl font-kaushan">Lorem Ipsum</h3>
+            <h3 className="text-3xl font-kaushan text-center">Muhammad Aslam Fikri</h3>
             <p className="text-gray-900 mt-2 font-raleway font-medium">
               Founder & CEO
-            </p>
-            <p className="text-gray-900 mt-4 font-quicksand text-center text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
-              dignissimos fuga at
-            </p>
-          </div>
-
-          <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
-            <Image
-              src={defPerson}
-              alt="Founder PorluCoffee"
-              className="w-40 h-40 object-cover rounded-full mb-6 border-4 border-white shadow-md"
-            />
-            <h3 className="text-3xl font-kaushan">Lorem Ipsum</h3>
-            <p className="text-gray-900 mt-2 font-raleway font-medium">
-              Co-Founder
-            </p>
-            <p className="text-gray-900 mt-4 font-quicksand text-center text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt
-              dignissimos fuga at
             </p>
           </div>
         </div>

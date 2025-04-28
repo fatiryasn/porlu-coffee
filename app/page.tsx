@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
 
 import { FaInstagram } from "react-icons/fa";
 
@@ -10,7 +11,6 @@ import quote from "../public/assets/quote.png";
 import story from "../public/assets/porlucoffee-story.png";
 import bestProduct from "../public/assets/product.jpg";
 import instagram from "../public/assets/instagram.png";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home - PorluCoffee",
