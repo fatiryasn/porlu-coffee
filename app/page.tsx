@@ -1,15 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { FaInstagram} from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 import homeHero from "../public/assets/abt5.png";
 import logo from "../public/assets/porlucoffee-logo.png";
-import product from "../public/assets/porlucoffee-product1.png"
-import quote from "../public/assets/quote.png"
-import story from "../public/assets/porlucoffee-story.png"
-import bestProduct from "../public/assets/product.jpg"
-import instagram from "../public/assets/instagram.png"
+import product from "../public/assets/porlucoffee-product1.png";
+import quote from "../public/assets/quote.png";
+import story from "../public/assets/porlucoffee-story.png";
+import bestProduct from "../public/assets/product.jpg";
+import instagram from "../public/assets/instagram.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home - PorluCoffee",
+  description:
+    "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee adalah kopi yang berasal dari dataran tinggi Sumatera Utara, Doloksanggul",
+};
 
 export default function Home() {
   return (

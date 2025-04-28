@@ -5,6 +5,12 @@ import abt1 from "../../public/assets/abt1.png";
 import abt3 from "../../public/assets/abt3.png";
 import abt5 from "../../public/assets/abt5.png";
 import defPerson from "../../public/assets/def-person.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About - PorluCoffee",
+  description: "Ayo cari tahu bagaimana perjalanan PorluCoffee dan mari berkenalan dengan kami!"
+}
 
 const AboutPage = () => {
   return (

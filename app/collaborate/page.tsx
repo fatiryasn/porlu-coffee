@@ -3,7 +3,12 @@ import Image from "next/image";
 
 import collabHero from "../../public/assets/collab-hero.jpg"
 import CollabForm from "../components/CollabForm";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Collaboration - PorluCoffee",
+  description: "PorluCoffee membuka peluang kolaborasi dengan individu, brand, maupun komunitas untuk menciptakan inovasi tak terbatas. Hubungi kami untuk lebih lanjut!"
+}
 const CollabPage = () => {
   return (
     <>

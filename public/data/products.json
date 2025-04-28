@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "productName": "Regular 1/4 KG",
+    "price": 50000,
+    "image": "assets/porlucoffee-regular.jpg",
+    "categories": ["coffee"]
+  },
+  {
+    "id": 2,
+    "productName": "Regular 1/2 KG",
+    "price": 90000,
+    "image": "assets/porlucoffee-regular.jpg",
+    "categories": ["coffee"]
+  },
+  {
+    "id": 3,
+    "productName": "Regular 1 KG",
+    "price": 180000,
+    "image": "assets/porlucoffee-regular.jpg",
+    "categories": ["coffee"]
+  },
+  {
+    "id": 4,
+    "productName": "Brown Sugar Milk Coffee",
+    "price": 15000,
+    "image": "assets/porlucoffee-brownsugar.jpg",
+    "categories": ["coffee"]
+  }
+]
