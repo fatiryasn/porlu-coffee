@@ -70,7 +70,7 @@ export default function Home() {
             Why PorluCoffee?
           </h2>
           <p className="text-gray-800 text-sm text-end md:text-left md:text-base lg:text-lg md:max-w-xl font-jura">
-            We don't just serve coffee — we serve stories, flavors, and meaning
+            We don&apos;t just serve coffee — we serve stories, flavors, and meaning
             in every cup.
           </p>
           <Image

@@ -33,13 +33,13 @@ const LanguageSelector = () => {
       : pathname;
 
     const matchedPath = Object.entries(pathMap).find(
-      ([_, paths]) =>
+      ([, paths]) =>
         paths.en === currentPath ||
         paths.id.replace(/^\/id/, "") === currentPath
     );
 
     if (matchedPath) {
-      const [_, paths] = matchedPath;
+      const [, paths] = matchedPath;
       const newPath = lang === "id" ? paths.id : paths.en;
       router.push(newPath);
     } else {

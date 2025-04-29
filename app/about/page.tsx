@@ -10,7 +10,7 @@ import founder from "../../public/assets/founder.jpg"
 export const metadata: Metadata = {
   title: "About - PorluCoffee",
   description:
-    "Come find out how PorluCoffee's journey is and let's get to know us!",
+    "Come find out how PorluCoffee's journey is and lets get to know us!",
 };
 
 const AboutPage = () => {
@@ -44,7 +44,7 @@ const AboutPage = () => {
             </span>
           </h1>
           <p className="px-5 md:px-0 max-w-xl font-jura md:text-lg lg:text-xl leading-loose font-medium text-gray-700 text-center">
-            Come find out how PorluCoffee's journey is and let's get to know us!
+            Come find out how PorluCoffee&apos;s journey is and lets get to know us!
           </p>
         </div>
       </main>

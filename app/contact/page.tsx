@@ -21,7 +21,7 @@ const ContactPage = () => {
         </h1>
         <p className="font-jura mt-2 max-w-2xl text-sm md:text-base px-5 text-center leading-relaxed">
           We are here to listen to you. Ask questions, share concerns, or build
-          partnerships and investor relations. Let's connect with PorluCoffee!
+          partnerships and investor relations. Let&apos;s connect with PorluCoffee!
         </p>
       </main>
 

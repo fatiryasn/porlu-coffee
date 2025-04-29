@@ -90,7 +90,7 @@ const CollabForm = () => {
           Be Our Partner!
         </h2>
         <p className="font-quicksand text-center md:text-left text-sm md:text-base lg:text-xl text-gray-700 font-light mb-10">
-          Let's create ideas and innovations with PorluCoffee.
+          Let&apos;s create ideas and innovations with PorluCoffee.
         </p>
         <form
           ref={form}
