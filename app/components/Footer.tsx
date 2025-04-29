@@ -58,7 +58,8 @@ const Footer = () => {
           </h3>
           <ul className="text-gray-200 text-sm font-quicksand space-y-2">
             <li>Email: porlucoffee@gmail.com</li>
-            <li>Alamat: Jl. Raya Mandailing No.10</li>
+            <li>Telp: +62 822 7778 6223</li>
+            <li>Alamat: Jl. Pendidikan, Doloksanggul</li>
           </ul>
         </div>
 

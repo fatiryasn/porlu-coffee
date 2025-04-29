@@ -9,8 +9,8 @@ import logo from "../public/assets/porlucoffee-logo.png";
 import product from "../public/assets/porlucoffee-product1.png";
 import quote from "../public/assets/quote.png";
 import story from "../public/assets/porlucoffee-story.png";
-import bestProduct from "../public/assets/product.jpg";
 import instagram from "../public/assets/instagram.png";
+import BestOf from "./components/BestOf";
 
 export const metadata: Metadata = {
   title: "Home - PorluCoffee",
@@ -172,72 +172,7 @@ export default function Home() {
           d="M0,224L120,229.3C240,235,480,245,720,245.3C960,245,1200,235,1320,229.3L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
         ></path>
       </svg>
-      <section className="bg-gradient-to-b from-green-200 to-blue-300 py-20 md:py-5 px-6 md:px-12 lg:px-32">
-        <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-4xl font-kaushan font-bold text-gray-800 mb-2 md:mb-4">
-            Best of{" "}
-            <span className="font-raleway text-green-900">PorluCoffee</span>
-          </h2>
-          <p className="text-gray-900 font-jura text-sm md:text-lg max-w-xl mx-auto">
-            Pilihan terbaik untuk pecinta kopi sejati — setiap biji dipilih
-            dengan cermat, demi rasa yang tak terlupakan.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-          {[
-            {
-              img: bestProduct,
-              title: "House Blend",
-              desc: "Campuran biji khas kami dengan rasa seimbang — nutty, caramel, dan sedikit fruity.",
-            },
-            {
-              img: bestProduct,
-              title: "Single Origin",
-              desc: "Cita rasa murni dari satu wilayah, menawarkan karakteristik khas dan unik.",
-            },
-            {
-              img: bestProduct,
-              title: "Dark Roast",
-              desc: "Rasa bold dan pekat, cocok untuk espresso lovers dan pecinta kopi kuat.",
-            },
-            {
-              img: bestProduct,
-              title: "Cold Brew Pack",
-              desc: "Paket khusus untuk penyeduhan dingin di rumah — praktis dan menyegarkan.",
-            },
-          ].map((product, index) => (
-            <div
-              key={index}
-              className="flex bg-white rounded-2xl shadow-md hover:shadow-lg transition px-4 py-3 gap-5 border-[0.1px] border-yellow-600 items-center"
-            >
-              <Image
-                src={product.img}
-                alt={product.title}
-                className="w-24 h-24 md:h-28 md:w-28 lg:w-36 lg:h-36 object-cover rounded-xl"
-              />
-              <div className="max-w-sm">
-                <h3 className="text-lg md:text-xl font-raleway font-semibold text-gray-800 mb-1">
-                  {product.title}
-                </h3>
-                <p className="text-gray-900 text-xs md:text-sm mb-3 font-quicksand ">
-                  {product.desc}
-                </p>
-                <p className="text-emerald-800 text-base font-semibold font-raleway">
-                  RpXXX.XXX
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="mt-10 flex justify-center items-center">
-          <Link href="/products">
-            <button className="text-gray-50 bg-green-700 rounded-xl hover:bg-green-900 transition cursor-pointer font-poppins font-semibold px-5 py-3">
-              Lihat lebih banyak
-            </button>
-          </Link>
-        </div>
-      </section>
+      <BestOf />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#93C5FD"
@@ -261,7 +196,6 @@ export default function Home() {
             kopi pilihan secara langsung.
           </p>
         </div>
-
         <div className="flex flex-col md:flex-row-reverse bg-green-200 border-[0.2px] border-green-800 md:p-5 rounded-xl justify-center lg:gap-10">
           <div className="p-5">
             <Image
@@ -273,28 +207,28 @@ export default function Home() {
               PorluCoffe HQ
             </h3>
             <p className="text-gray-950 font-quicksand mb-5">
-              Jl. Kopi Sejati No. 10
+              Jl. Pendidikan
               <br />
               Doloksanggul, Sumatera Utara
               <br />
-              Indonesia 22457
+              Indonesia
             </p>
-            <p className="text-gray-950 font-quicksand">
+            {/*<p className="text-gray-950 font-quicksand">
               <strong className="font-poppins">Jam Buka:</strong>
               <br />
               Senin – Sabtu: 08.00 – 18.00
               <br />
               Minggu: Libur
-            </p>
+            </p>*/}
           </div>
 
           <div className="bg-white md:w-[60%] p-4 rounded-xl">
             <div className="h-[25rem] w-[100%] md:h-[35rem] rounded-2xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.625907250678!2d98.99129772726377!3d2.302087447339394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e05e1146f9e11%3A0xe6539d6a8e4019b7!2sDoloksanggul%2C%20Kabupaten%20Humbang%20Hasundutan%2C%20Sumatera%20Utara!5e0!3m2!1sen!2sid!4v1712299922222!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.2064680724388!2d98.74816262252601!3d2.260582384099417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e3b58ab49528b%3A0xbeefc0377db5069b!2sJl.%20Pendidikan%2C%20Ps.%20Dolok%20Sanggul%2C%20Kec.%20Dolok%20sanggul%2C%20Kabupaten%20Humbang%20Hasundutan%2C%20Sumatera%20Utara%2022457!5e0!3m2!1sid!2sid!4v1745894544244!5m2!1sid!2sid"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
+                style={{border:0}}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

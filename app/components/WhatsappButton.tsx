@@ -4,7 +4,7 @@ import Image from "next/image";
 import whatsapp from "../../public/assets/whatsapp.png";
 
 const WhatsappButton = () => {
-  const phoneNumber = "6283874085953";
+  const phoneNumber = "6282277786223";
 
   return (
     <a

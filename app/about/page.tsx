@@ -98,7 +98,7 @@ const AboutPage = () => {
         <div className="flex flex-col items-end md:items-stretch gap-2 md:w-[25%]">
           <div className="bg-green-600 w-24 h-1"></div>
           <h2 className="text-green-900 font-bold font-poppins text-4xl md:text-5xl">
-            Since 2XXX
+            Since 2025
           </h2>
           <p className="text-sm font-quicksand font-medium text-gray-900">
             The Founding of PorluCoffee

@@ -86,7 +86,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col w-full md:max-w-xl lg:max-w-lg sm:px-10 md:px-5 px-5">
+    <div className="flex flex-col w-full md:max-w-xl lg:max-w-lg sm:px-10 md:px-5 px-3">
       <form
         ref={form}
         onSubmit={sendEmail}
