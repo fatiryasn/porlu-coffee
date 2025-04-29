@@ -25,27 +25,27 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4 font-raleway">Navigasi</h3>
           <ul className="space-y-2 text-gray-200 font-quicksand text-sm">
             <li>
-              <Link href="/" className="hover:underline">
+              <Link href="/id" className="hover:underline">
                 Beranda
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:underline">
+              <Link href="/id/tentang-kami" className="hover:underline">
                 Tentang Kami
               </Link>
             </li>
             <li>
-              <Link href="/products" className="hover:underline">
+              <Link href="/id/produk" className="hover:underline">
                 Produk
               </Link>
             </li>
             <li>
-              <Link href="/collaborate" className="hover:underline">
+              <Link href="/id/kolaborasi" className="hover:underline">
                 Kolaborasi
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:underline">
+              <Link href="/id/kontak" className="hover:underline">
                 Kontak
               </Link>
             </li>

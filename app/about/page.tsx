@@ -5,7 +5,11 @@ import { Metadata } from "next";
 import abt1 from "../../public/assets/abt1.png";
 import abt3 from "../../public/assets/abt3.png";
 import abt5 from "../../public/assets/abt5.png";
-import founder from "../../public/assets/founder.jpg"
+import founder from "../../public/assets/founder.jpg";
+
+import news1 from "../../public/assets/news1.jpg";
+import news3 from "../../public/assets/news3.jpg";
+import Carousel from "../components/Carousel";
 
 export const metadata: Metadata = {
   title: "About - PorluCoffee",
@@ -21,17 +25,17 @@ const AboutPage = () => {
           <Image
             src={abt1}
             alt="About Porlucoffee"
-            className="object-cover w-[33%]"
+            className="object-cover w-1/3"
           />
           <Image
             src={abt5}
             alt="About Porlucoffee"
-            className="object-cover w-[33%] grow"
+            className="object-cover w-1/3 grow"
           />
           <Image
             src={abt3}
             alt="About Porlucoffee"
-            className="object-cover w-[33%]"
+            className="object-cover w-1/3"
           />
         </div>
         <div className="flex flex-col items-center gap-5">
@@ -44,7 +48,8 @@ const AboutPage = () => {
             </span>
           </h1>
           <p className="px-5 md:px-0 max-w-xl font-jura md:text-lg lg:text-xl leading-loose font-medium text-gray-700 text-center">
-            Come find out how PorluCoffee&apos;s journey is and lets get to know us!
+            Come find out how PorluCoffee&apos;s journey is and lets get to know
+            us!
           </p>
         </div>
       </main>
@@ -94,7 +99,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row justify-center gap-10 md:items-center px-5 md:px-16 lg:px-24 mt-32">
+      <section className="flex flex-col md:flex-row justify-center gap-10 md:items-center px-5 md:px-16 mt-32">
         <div className="flex flex-col items-end md:items-stretch gap-2 md:w-[25%]">
           <div className="bg-green-600 w-24 h-1"></div>
           <h2 className="text-green-900 font-bold font-poppins text-4xl md:text-5xl">
@@ -116,6 +121,40 @@ const AboutPage = () => {
             highlands to the hearts of coffee lovers.
           </p>
         </div>
+      </section>
+
+      <section className="mt-32 px-3 md:px-16 lg:px-24 flex flex-col lg:flex-row-reverse justify-center gap-5 lg:gap-8 xl:gap-14">
+        <div className="flex flex-col">
+          <h2 className="font-semibold font-kaushan text-2xl md:text-3xl lg:text-4xl">
+            <span className="text-green-900 font-raleway">PorluCoffee</span>{" "}
+            with Ir. Surip Mawardi
+          </h2>
+          <div className="flex items-center gap-2 mt-2">
+            <div className="w-20 h-1 bg-green-600"></div>
+            <h4 className="font-jura font-semibold md:text-xl lg:text-2xl">
+              Indonesian Coffee Hero
+            </h4>
+          </div>
+          <p className="mt-2 max-w-xl text-sm md:text-[0.9rem] lg:text-base font-quicksand font-medium">
+            PorluCoffee Founder visits a coffee plantation with Ir. Surip
+            Mawardi, a figure widely known as a pioneer of coffee research in
+            Indonesia. PorluCoffee is committed to elevating Indonesian coffee
+            to the world stage.
+          </p>
+          <div className="flex gap-2 lg:gap-5 lg:flex-col 2xl:flex-row xl:gap-10 mt-10">
+            <Image
+              src={news1}
+              alt="PorluCoffee with Mr. Surip Mawardi"
+              className="w-1/2 max-h-[18rem] lg:w-full  2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
+            />
+            <Image
+              src={news3}
+              alt="PorluCoffee with Mr. Surip Mawardi"
+              className="w-1/2 max-h-[18rem] lg:w-full 2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
+            />
+          </div>
+        </div>
+        <Carousel />
       </section>
 
       {/* Visi & Misi */}

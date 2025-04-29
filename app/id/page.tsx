@@ -204,7 +204,7 @@ export default function Home() {
               className="h-14 w-14 md:h-20 md:w-20 bg-white rounded-full mb-2"
             />
             <h3 className="text-lg md:text-xl font-semibold font-raleway text-gray-900 mb-1">
-              PorluCoffe HQ
+              PorluCoffee HQ
             </h3>
             <p className="text-gray-950 font-quicksand mb-5">
               Jl. Pendidikan
