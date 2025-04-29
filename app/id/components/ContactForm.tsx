@@ -94,7 +94,7 @@ const ContactForm = () => {
       >
         <div>
           <label className="block mb-1 md:mb-2 font-quicksand font-medium">
-            Subject
+            Tujuan Pesan
           </label>
           <select
             name="type"
@@ -102,9 +102,9 @@ const ContactForm = () => {
             className="w-full px-2 py-1 md:py-2 lg:py-3 border-[0.2px] border-gray-400 font-poppins text-lg rounded-xl"
             defaultValue="pertanyaan"
           >
-            <option value="pertanyaan">Question</option>
-            <option value="kemitraan">Partnership</option>
-            <option value="investasi">Investment</option>
+            <option value="pertanyaan">Pertanyaan</option>
+            <option value="kemitraan">Kemitraan</option>
+            <option value="investasi">Investasi</option>
           </select>
         </div>
         <input type="hidden" name="title" value={title} />
@@ -144,7 +144,7 @@ const ContactForm = () => {
             autoComplete="off"
           />
           <div className="flex items-center gap-2 mt-1">
-            <span className="font-quicksand">This number is active in WhatsApp</span>
+            <span className="font-quicksand">Nomor ini aktif di WhatsApp</span>
             <input
               type="checkbox"
               name="canWhatsapp"
@@ -169,17 +169,19 @@ const ContactForm = () => {
 
         <div>
           <p className="font-outfit text-sm md:text-base text-gray-800">
-            The data from this form will be sent to PorluCoffee email, you will
-            get more information after we receive it.
+            Data dari form ini akan terkirim ke email PorluCoffee, anda akan
+            mendapatkan info lebih lanjut setelah kami terima.
           </p>
           <ul className="font-outfit text-sm md:text-base text-amber-950">
             <li className="flex items-center gap-2">
               <FaCheck />
-              <span>Make sure the email you wrote is active</span>
+              <span>Pastikan email yang anda tulis aktif</span>
             </li>
             <li className="flex items-center gap-2">
               <FaCheck />
-              <span>Use full name (individual/community/brand/etc.)</span>
+              <span>
+                Gunakan nama lengkap (individu / komunitas / brand / dll)
+              </span>
             </li>
           </ul>
         </div>

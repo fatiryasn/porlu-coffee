@@ -39,8 +39,8 @@ const BestOf = () => {
           <span className="font-raleway text-green-900">PorluCoffee</span>
         </h2>
         <p className="text-gray-900 font-jura text-sm md:text-lg max-w-xl mx-auto">
-          The best choice for true coffee lovers — every bean is carefully
-          selected, for an unforgettable taste.
+          Pilihan terbaik untuk pecinta kopi sejati — setiap biji dipilih dengan
+          cermat, demi rasa yang tak terlupakan.
         </p>
       </div>
 
@@ -78,9 +78,9 @@ const BestOf = () => {
       </div>
 
       <div className="mt-10 flex justify-center items-center">
-        <Link href="/products">
+        <Link href="/id/produk">
           <button className="text-gray-50 bg-green-700 rounded-xl hover:bg-green-900 transition cursor-pointer font-poppins font-semibold px-5 py-3">
-            See More
+            Lihat lebih banyak
           </button>
         </Link>
       </div>

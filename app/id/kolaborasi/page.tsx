@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { Metadata } from "next";
 
-import collabHero from "../../public/assets/collab-hero.jpg"
+import collabHero from "../../../public/assets/collab-hero.jpg";
 import CollabForm from "../components/CollabForm";
 
 export const metadata: Metadata = {
-  title: "Collaboration - PorluCoffee",
+  title: "Kolaborasi - PorluCoffee",
   description:
-    "PorluCoffee opens up opportunities for collaboration with individuals, brands, and communities to create unlimited innovations. Contact us for more!",
+    "PorluCoffee membuka peluang kolaborasi dengan individu, brand, maupun komunitas untuk menciptakan inovasi tak terbatas. Hubungi kami untuk lebih lanjut!",
 };
 const CollabPage = () => {
   return (
@@ -24,12 +24,12 @@ const CollabPage = () => {
           <div className="absolute inset-0 bg-black/45 z-10" />
           <div className="absolute inset-0 flex flex-col gap-2 items-center justify-center z-20">
             <h1 className="text-amber-100 text-[2.5rem] lg:text-[4rem] font-poppins font-bold">
-              Collaboration
+              Kolaborasi
             </h1>
             <p className="ml-2 px-4 text-sm md:text-base lg:text-xl text-gray-50 font-jura font-medium md:max-w-2xl text-center">
-              PorluCoffee opens up opportunities for collaboration with
-              individuals, brands, and communities to create unlimited
-              innovations. Contact us for more!
+              PorluCoffee membuka peluang kolaborasi dengan individu, brand,
+              maupun komunitas untuk menciptakan inovasi tak terbatas. Hubungi
+              kami untuk lebih lanjut!
             </p>
           </div>
         </div>

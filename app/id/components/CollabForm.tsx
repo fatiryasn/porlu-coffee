@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
 
-import abt1 from "../../public/assets/abt1.png";
+import abt1 from "../../../public/assets/abt1.png";
 
 const CollabForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -87,10 +87,10 @@ const CollabForm = () => {
       </div>
       <div className="flex flex-col w-full md:max-w-xl lg:max-w-lg sm:px-10 md:px-0">
         <h2 className="text-4xl text-center md:text-left text-amber-950 font-outfit font-semibold mb-1">
-          Be Our Partner!
+          Jadi Partner Kami!
         </h2>
         <p className="font-quicksand text-center md:text-left text-sm md:text-base lg:text-xl text-gray-700 font-light mb-10">
-          Let's create ideas and innovations with PorluCoffee.
+          Mari menciptakan ide dan inovasi bersama PorluCoffee.
         </p>
         <form
           ref={form}
@@ -136,7 +136,7 @@ const CollabForm = () => {
             />
             <div className="flex items-center gap-2 mt-1">
               <span className="font-quicksand">
-                This number is active in WhatsApp
+                Nomor ini aktif di WhatsApp
               </span>
               <input
                 type="checkbox"
@@ -162,17 +162,19 @@ const CollabForm = () => {
 
           <div>
             <p className="font-outfit text-sm md:text-base text-gray-800">
-              The data from this form will be sent to PorluCoffee email, you
-              will get more information after we receive it.
+              Data dari form ini akan terkirim ke email PorluCoffee , anda akan mendapatkan
+              info lebih lanjut setelah kami terima.
             </p>
             <ul className="font-outfit text-sm md:text-base text-amber-950">
               <li className="flex items-center gap-2">
                 <FaCheck />
-                <span>Make sure the email you wrote is active</span>
+                <span>Pastikan email yang anda tulis aktif</span>
               </li>
               <li className="flex items-center gap-2">
                 <FaCheck />
-                <span>Use full name (individual/community/brand/etc.)</span>
+                <span>
+                  Gunakan nama lengkap (individu / komunitas / brand / dll)
+                </span>
               </li>
             </ul>
           </div>

@@ -15,10 +15,11 @@ import { MdConnectWithoutContact } from "react-icons/md";
 import logo from "../../public/assets/porlucoffee-logo.png"
 import textLogo from "../../public/assets/porlucoffee-text-logo.png"
 import textLogoWhite from "../../public/assets/porlucoffee-text-logo-white.png"
+import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
   const pathname = usePathname();
-  const isHome = pathname === "/";
+  const isHome = pathname === "/id" || pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -59,43 +60,44 @@ const Navbar = () => {
 
         <nav className="hidden md:flex justify-center items-center gap-6 font-jura">
           <Link
-            href="/"
-            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
+            href="/id"
+            className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Beranda</span>
           </Link>
           <Link
-            href="/products"
-            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
+            href="/id/produk"
+            className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Produk</span>
           </Link>
           <Link
-            href="/about"
-            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
+            href="/id/tentang-kami"
+            className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Tentang Kami</span>
           </Link>
           <Link
-            href="/collaborate"
-            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
+            href="/id/kolaborasi"
+            className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Kolaborasi</span>
           </Link>
           <Link
-            href="/contact"
-            className="font-medium flex items-center gap-1 hover:underline md:text-lg"
+            href="/id/kontak"
+            className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Kontak</span>
           </Link>
+          <LanguageSelector />
         </nav>
 
-        <button
-          className="inline md:hidden text-2xl"
-          onClick={() => setIsSidebarOpen(true)}
-        >
-          <RxHamburgerMenu />
-        </button>
+        <div className="flex md:hidden items-center gap-5">
+          <LanguageSelector />
+          <button className="text-2xl" onClick={() => setIsSidebarOpen(true)}>
+            <RxHamburgerMenu />
+          </button>
+        </div>
       </div>
 
       {isSidebarOpen && (
@@ -118,7 +120,7 @@ const Navbar = () => {
         </div>
         <nav className="flex flex-col gap-4 p-4 text-base font-jura">
           <Link
-            href="/"
+            href="/id"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -126,7 +128,7 @@ const Navbar = () => {
             <span>Beranda</span>
           </Link>
           <Link
-            href="/products"
+            href="/id/produk"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -134,7 +136,7 @@ const Navbar = () => {
             <span>Produk</span>
           </Link>
           <Link
-            href="/about"
+            href="/id/tentang-kami"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -142,7 +144,7 @@ const Navbar = () => {
             <span>Tentang Kami</span>
           </Link>
           <Link
-            href="/collaborate"
+            href="/id/kolaborasi"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -150,7 +152,7 @@ const Navbar = () => {
             <span>Kolaborasi</span>
           </Link>
           <Link
-            href="/contact"
+            href="/id/kontak"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >

@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Poppins, Raleway, Quicksand, Outfit, Jura, Kaushan_Script, Grenze } from "next/font/google";
+import {
+  Poppins,
+  Raleway,
+  Quicksand,
+  Outfit,
+  Jura,
+  Kaushan_Script,
+  Grenze,
+} from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import WhatsappButton from "./components/WhatsappButton";
 
+import RootClient from "./RootClient"; 
+
+// Font setup
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -59,10 +67,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${raleway.variable} ${quicksand.variable} ${outfit.variable} ${jura.variable} ${kaushan.variable} ${grenze.variable} antialiased`}
       >
-        <Navbar />
-        <div className="min-h-screen">{children}</div>
-        <WhatsappButton />
-        <Footer />
+        <RootClient>{children}</RootClient>
       </body>
     </html>
   );

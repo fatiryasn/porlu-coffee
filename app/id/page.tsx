@@ -4,18 +4,18 @@ import { Metadata } from "next";
 
 import { FaInstagram } from "react-icons/fa";
 
-import homeHero from "../public/assets/abt5.png";
-import logo from "../public/assets/porlucoffee-logo.png";
-import product from "../public/assets/porlucoffee-product1.png";
-import quote from "../public/assets/quote.png";
-import story from "../public/assets/porlucoffee-story.png";
-import instagram from "../public/assets/instagram.png";
+import homeHero from "../../public/assets/abt5.png";
+import logo from "../../public/assets/porlucoffee-logo.png";
+import product from "../../public/assets/porlucoffee-product1.png";
+import quote from "../../public/assets/quote.png";
+import story from "../../public/assets/porlucoffee-story.png";
+import instagram from "../../public/assets/instagram.png";
 import BestOf from "./components/BestOf";
 
 export const metadata: Metadata = {
-  title: "Home - PorluCoffee",
+  title: "Beranda - PorluCoffee",
   description:
-    "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
+    "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee adalah kopi yang berasal dari dataran tinggi Sumatera Utara, Doloksanggul",
 };
 
 export default function Home() {
@@ -45,12 +45,12 @@ export default function Home() {
             From Doloksanggul, North Sumatera.
           </h2>
           <p className="md:text-lg lg:text-xl font-jura text-gray-100 max-w-2xl mb-8">
-            PorluCoffee offers quality coffee that is carefully selected to
-            provide the perfect coffee drinking experience every day.
+            PorluCoffee menawarkan kualitas dari kopi yang dipilih secara matang
+            untuk menghadirkan pengalaman minum kopi yang sempurna setiap hari.
           </p>
-          <Link href={"/products"}>
+          <Link href={"/id/produk"}>
             <button className="bg-green-600 hover:bg-green-700 transition px-4 py-2 md:px-6 md:py-3 text-sm md:text-base cursor-pointer rounded-full font-poppins font-semibold text-white shadow-lg">
-              See Our Products
+              Lihat Produk Kami
             </button>
           </Link>
         </div>
@@ -70,8 +70,8 @@ export default function Home() {
             Why PorluCoffee?
           </h2>
           <p className="text-gray-800 text-sm text-end md:text-left md:text-base lg:text-lg md:max-w-xl font-jura">
-            We don't just serve coffee — we serve stories, flavors, and meaning
-            in every cup.
+            Kami tidak sekadar menyajikan kopi — tapi juga cerita, rasa, dan
+            makna dalam setiap cangkir.
           </p>
           <Image
             src={product}
@@ -84,44 +84,44 @@ export default function Home() {
           <div className="bg-gray-100 p-3 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition">
             <div className="text-2xl md:text-4xl text-green-700 mb-4">🌱</div>
             <h3 className="text-xl md:text-2xl font-semibold mb-2 font-grenze">
-              Fresh roasted
+              Sangrai Segar
             </h3>
             <p className="text-gray-800 text-sm font-quicksand">
-              All of our coffee beans are roasted in small batches to ensure
-              they are fresh and delicious.
+              Semua biji kopi kami disangrai dalam batch kecil agar tetap segar
+              dan nikmat.
             </p>
           </div>
 
           <div className="bg-gray-100 p-3 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition">
             <div className="text-2xl md:text-4xl text-green-700 mb-4">☕</div>
             <h3 className="text-xl md:text-2xl font-semibold mb-2 font-grenze">
-              Rich and bold taste
+              Rasa Kaya & Berani
             </h3>
             <p className="text-gray-800 text-sm font-quicksand">
-              Our selected coffee beans provide a balanced and delicious taste
-              deep in every sip.
+              Biji kopi pilihan kami menghadirkan rasa yang seimbang dan
+              mendalam di setiap tegukan.
             </p>
           </div>
 
           <div className="bg-gray-100 p-3 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition">
             <div className="text-2xl md:text-4xl text-green-700 mb-4">🌍</div>
             <h3 className="text-xl md:text-2xl font-semibold mb-2 font-grenze">
-              Sustainable practices
+              Praktik Berkelanjutan
             </h3>
             <p className="text-gray-800 text-sm font-quicksand">
-              We support environmentally friendly farming and ethical sourcing
-              processes.
+              Kami mendukung pertanian ramah lingkungan dan proses sumber yang
+              etis.
             </p>
           </div>
 
           <div className="bg-gray-100 p-3 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition">
             <div className="text-2xl md:text-4xl text-green-700 mb-4">📦</div>
             <h3 className="text-xl md:text-2xl font-semibold mb-2 font-grenze">
-              Delivery throughout Indonesia
+              Pengiriman Seluruh Indonesia
             </h3>
             <p className="text-gray-800 text-sm font-quicksand">
-              We will deliver your favorite coffee right to your door, wherever
-              you are.
+              Kopi favoritmu akan kami antar langsung ke pintu rumah, ke mana
+              pun kamu berada.
             </p>
           </div>
         </div>
@@ -148,17 +148,18 @@ export default function Home() {
         </div>
         <div className="px-5 md:p-0 md:w-[60%]">
           <p className="text-gray-900 text-xl md:text-2xl lg:text-[1.7rem] leading-loose text-justify mb-3 font-quicksand">
-            PorluCoffee was born in the Doloksanggul highlands, an area rich in
-            tradition and lush nature. Founded in 2025, we began this journey
-            with one simple goal: to bring the best taste of coffee from our
-            land to all corners of Indonesia, and even the world.
+            PorluCoffee lahir di dataran tinggi Doloksanggul, sebuah daerah yang
+            kaya akan tradisi dan alam yang subur. Didirikan pada tahun 2025,
+            kami memulai perjalanan ini dengan satu tujuan sederhana: membawa
+            cita rasa kopi terbaik dari tanah kami ke seluruh penjuru Indonesia,
+            bahkan dunia.
           </p>
           <p className="text-gray-900 text-xl md:text-2xl lg:text-[1.7rem] leading-loose text-justify font-quicksand">
-            Every coffee bean we produce is handpicked and processed with
-            dedication by local farmers. We believe that a great cup of coffee
-            is not just about taste, but also about story, origin, and love for
-            the process. PorluCoffee is not just a product — it is a legacy we
-            are proud of.
+            Setiap biji kopi yang kami hasilkan dipetik secara selektif dan
+            diproses dengan penuh dedikasi oleh para petani lokal. Kami percaya
+            bahwa secangkir kopi yang baik bukan hanya soal rasa, tapi juga
+            tentang cerita, asal usul, dan cinta terhadap proses. PorluCoffee
+            bukan hanya produk — ini adalah warisan yang kami banggakan.
           </p>
         </div>
       </section>
@@ -183,16 +184,16 @@ export default function Home() {
       {/* sect 6 (address) */}
       <section
         className="pb-20 mt-20 md:mt-0 px-5 md:px-10 lg:px-40"
-        id="location"
+        id="lokasi"
       >
         <div className="flex items-center gap-5 mb-5">
           <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold font-kaushan text-gray-900 mb-4">
-            Our Location
+            Lokasi Kami
           </h2>
           <div className="w-32 h-[3px] bg-green-700"></div>
           <p className="text-gray-900 font-jura text-sm md:text-lg max-w-lg">
-            Visit our shop directly to experience the aroma and taste of
-            selected coffee directly.
+            Kunjungi langsung kedai kami untuk merasakan aroma dan cita rasa
+            kopi pilihan secara langsung.
           </p>
         </div>
         <div className="flex flex-col md:flex-row-reverse bg-green-200 border-[0.2px] border-green-800 md:p-5 rounded-xl justify-center lg:gap-10">
@@ -206,7 +207,7 @@ export default function Home() {
               PorluCoffe HQ
             </h3>
             <p className="text-gray-950 font-quicksand mb-5">
-              Pendidikan Street
+              Jl. Pendidikan
               <br />
               Doloksanggul, Sumatera Utara
               <br />
@@ -253,7 +254,7 @@ export default function Home() {
             />
           </div>
           <h2 className="text-sm md:text-base lg:text-lg font-semibold font-poppins text-yellow-800">
-            Follow us in Instagram!
+            Follow kami di Instagram!
           </h2>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-raleway text-green-700">
             @porlucoffee

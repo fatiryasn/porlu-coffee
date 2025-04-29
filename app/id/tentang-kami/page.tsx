@@ -2,15 +2,15 @@ import React from "react";
 import Image from "next/image";
 import { Metadata } from "next";
 
-import abt1 from "../../public/assets/abt1.png";
-import abt3 from "../../public/assets/abt3.png";
-import abt5 from "../../public/assets/abt5.png";
-import founder from "../../public/assets/founder.jpg"
+import abt1 from "../../../public/assets/abt1.png";
+import abt3 from "../../../public/assets/abt3.png";
+import abt5 from "../../../public/assets/abt5.png";
+import founder from "../../../public/assets/founder.jpg";
 
 export const metadata: Metadata = {
-  title: "About - PorluCoffee",
+  title: "Tentang Kami - PorluCoffee",
   description:
-    "Come find out how PorluCoffee's journey is and let's get to know us!",
+    "Ayo cari tahu bagaimana perjalanan PorluCoffee dan mari berkenalan dengan kami!",
 };
 
 const AboutPage = () => {
@@ -20,17 +20,17 @@ const AboutPage = () => {
         <div className="flex max-h-[27rem]">
           <Image
             src={abt1}
-            alt="About Porlucoffee"
+            alt="Tentang Porlucoffee"
             className="object-cover w-[33%]"
           />
           <Image
             src={abt5}
-            alt="About Porlucoffee"
+            alt="Tentang Porlucoffee"
             className="object-cover w-[33%] grow"
           />
           <Image
             src={abt3}
-            alt="About Porlucoffee"
+            alt="Tentang Porlucoffee"
             className="object-cover w-[33%]"
           />
         </div>
@@ -44,7 +44,8 @@ const AboutPage = () => {
             </span>
           </h1>
           <p className="px-5 md:px-0 max-w-xl font-jura md:text-lg lg:text-xl leading-loose font-medium text-gray-700 text-center">
-            Come find out how PorluCoffee's journey is and let's get to know us!
+            Ayo cari tahu bagaimana perjalanan PorluCoffee dan mari berkenalan
+            dengan kami!
           </p>
         </div>
       </main>
@@ -79,17 +80,17 @@ const AboutPage = () => {
         </div>
         <div className=" md:p-0 md:w-[55%]">
           <p className="text-gray-900 text-lg md:text-xl lg:text-2xl leading-loose text-justify mb-3 font-quicksand">
-            PorluCoffee was born in the Doloksanggul highlands, an area rich in
-            tradition and lush nature. We started this journey with one simple
-            goal: to bring the best taste of coffee from our land to all corners
-            of Indonesia, even the world.
+            PorluCoffee lahir di dataran tinggi Doloksanggul, sebuah daerah yang
+            kaya akan tradisi dan alam yang subur. Kami memulai perjalanan ini
+            dengan satu tujuan sederhana: membawa cita rasa kopi terbaik dari
+            tanah kami ke seluruh penjuru Indonesia, bahkan dunia.
           </p>
           <p className="text-gray-900 text-lg md:text-xl lg:text-2xl leading-loose text-justify mb-3 font-quicksand">
-            Every coffee bean we produce is handpicked and processed with
-            dedication by local farmers. We believe that a great cup of coffee
-            is not just about taste, but also about story, origin, and love for
-            the process. PorluCoffee is not just a product — it is a legacy we
-            are proud of.
+            Setiap biji kopi yang kami hasilkan dipetik secara selektif dan
+            diproses dengan penuh dedikasi oleh para petani lokal. Kami percaya
+            bahwa secangkir kopi yang baik bukan hanya soal rasa, tapi juga
+            tentang cerita, asal usul, dan cinta terhadap proses. PorluCoffee
+            bukan hanya produk — ini adalah warisan yang kami banggakan.
           </p>
         </div>
       </section>
@@ -106,14 +107,14 @@ const AboutPage = () => {
         </div>
         <div className=" md:p-0 md:w-[55%]">
           <p className="text-gray-900 text-lg md:text-xl lg:text-2xl leading-loose text-justify mb-3 font-quicksand">
-            Our manifestation of love for authentic and meaningful local coffee.
-            Founded with the passion to raise the potential of coffee from the
-            land of Batak to the world stage, PorluCoffe is not only a place to
-            enjoy a cup of coffee, but also a meeting place for culture,
-            stories, and taste. With a commitment to quality and sustainability,
-            PorluCoffe has reached coffee lovers from various regions in
-            Indonesia and internationally, bringing the distinctive aroma of the
-            highlands to the hearts of coffee lovers.
+            Wujud cinta kami terhadap kopi lokal yang autentik dan bermakna.
+            Didirikan dengan semangat untuk mengangkat potensi kopi dari tanah
+            Batak ke panggung dunia, PorluCoffe tidak hanya menjadi tempat
+            menikmati secangkir kopi, tetapi juga menjadi ruang pertemuan
+            budaya, cerita, dan rasa. Dengan komitmen pada kualitas dan
+            keberlanjutan, PorluCoffe telah menjangkau penikmat kopi dari
+            berbagai daerah di Indonesia hingga internasional, membawa aroma
+            khas tanah tinggi ke hati para pecinta kopi.
           </p>
         </div>
       </section>
@@ -123,7 +124,7 @@ const AboutPage = () => {
         <div className="flex flex-col items-center gap-4">
           <div className="h-1 w-24 bg-gradient-to-r from-emerald-700 via-green-800 to-emerald-700 rounded-full"></div>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold font-raleway text-center text-green-900">
-            <span className="font-kaushan text-gray-800">Vision & Mission</span>{" "}
+            <span className="font-kaushan text-gray-800">Visi & Misi</span>{" "}
             PorluCoffee
           </h1>
           <div className="h-1 w-40 bg-gradient-to-r from-emerald-700 via-green-800 to-emerald-700 rounded-full"></div>
@@ -134,13 +135,13 @@ const AboutPage = () => {
           <div className="relative bg-green-500/20 backdrop-blur-md rounded-3xl p-10 shadow-lg hover:scale-[101%] hover:translate-y-[-5px] transition border border-emerald-400/50">
             <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
               <div className="bg-gradient-to-r from-green-700 to-emerald-500 text-white uppercase font-jura px-6 py-2 rounded-full text-lg font-semibold shadow-lg">
-                Vision
+                Visi
               </div>
             </div>
             <p className="font-quicksand md:text-lg lg:text-xl font-medium leading-relaxed mt-4 text-center">
-              To become a local coffee brand from Doloksanggul that is known
-              globally, while upholding quality, local wisdom, and
-              sustainability in every process.
+              Menjadi brand kopi lokal asal Doloksanggul yang dikenal secara
+              global, dengan tetap menjunjung tinggi kualitas, kearifan lokal,
+              dan keberlanjutan dalam setiap prosesnya.
             </p>
           </div>
 
@@ -148,13 +149,13 @@ const AboutPage = () => {
           <div className="relative bg-green-500/20 backdrop-blur-md rounded-3xl p-10 shadow-lg hover:scale-[101%] hover:translate-y-[-5px] transition border border-emerald-400/50">
             <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
               <div className="bg-gradient-to-r from-amber-600 to-yellow-400 text-white uppercase font-jura px-6 py-2 rounded-full text-lg font-semibold shadow-lg">
-                Mission
+                Misi
               </div>
             </div>
             <p className=" font-quicksand md:text-lg lg:text-xl font-medium leading-relaxed mt-4 text-center">
-              Serving the best coffee from the highlands of North Sumatra while
-              maintaining the authenticity of the taste, and introducing Batak
-              coffee to the world through authentic and meaningful products.
+              Menyajikan kopi terbaik dari dataran tinggi Sumatera Utara dengan
+              menjaga keaslian cita rasa, serta memperkenalkan kopi tanah Batak
+              ke dunia melalui produk yang otentik dan bermakna.
             </p>
           </div>
         </div>

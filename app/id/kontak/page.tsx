@@ -7,9 +7,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact - PorluCoffee",
+  title: "Kontak - PorluCoffee",
   description:
-    "We are here to listen to you. Ask questions, share concerns,or build partnerships and investor relations. Let's connect with PorluCoffee!",
+    "Kami siap mendengar Anda. Ajukan pertanyaan, sampaikan kekhawatiran, atau jalin kemitraan dan hubungan investor. Mari terhubung bersama PorluCoffee!",
 };
 
 const ContactPage = () => {
@@ -17,11 +17,12 @@ const ContactPage = () => {
     <>
       <main className="flex flex-col justify-center items-center pt-30">
         <h1 className="font-raleway text-3xl md:text-4xl font-semibold text-green-900">
-          Contact Us
+          Hubungi Kami
         </h1>
         <p className="font-jura mt-2 max-w-2xl text-sm md:text-base px-5 text-center leading-relaxed">
-          We are here to listen to you. Ask questions, share concerns, or build
-          partnerships and investor relations. Let's connect with PorluCoffee!
+          Kami siap mendengar Anda. Ajukan pertanyaan, sampaikan kekhawatiran,
+          atau jalin kemitraan dan hubungan investor. Mari terhubung bersama
+          PorluCoffee!
         </p>
       </main>
 
@@ -39,13 +40,13 @@ const ContactPage = () => {
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-grenze font-semibold">
-              Contact Info
+              Kontak
             </h2>
             <p className="text-sm md:text-base mt-4 font-quicksand font-medium">
-              PorluCoffee is always open to hear from you. Questions, concerns,
-              partnership opportunities, or investor relations, our team is
-              ready to help. You can come to our location, via our social media,
-              or you can directly fill out the form on this page.
+              PorluCoffee selalu terbuka untuk mendengar Anda. Pertanyaan,
+              kekhawatiran, peluang kemitraan, atau hubungan investor, tim kami
+              siap membantu. Anda dapat datang ke lokasi kami, lewat media
+              sosial kami, atau dapat langsung mengisi form di halaman ini.
             </p>
             <ul className="font-jura mt-5 flex flex-col gap-3">
               <li className="flex items-center  md:text-lg  gap-2">
