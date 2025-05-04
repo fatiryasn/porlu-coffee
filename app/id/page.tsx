@@ -10,6 +10,7 @@ import product from "../../public/assets/porlucoffee-product1.png";
 import quote from "../../public/assets/quote.png";
 import story from "../../public/assets/porlucoffee-story.png";
 import instagram from "../../public/assets/instagram.png";
+import textLogo from "../../public/assets/porlucoffee-text-logo-white.png"
 import BestOf from "./components/BestOf";
 
 export const metadata: Metadata = {
@@ -32,19 +33,26 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-black/70 z-10"></div>
 
-        <div className="relative z-20 h-full flex flex-col justify-center items-start px-8 md:px-12 lg:px-32 text-white">
-          <Image
-            src={logo}
-            alt="PorluCoffee Logo"
-            className="mb-4 rounded-full bg-white w-20 h-20 md:w-24 md:h-24 lg:h-28 lg:w-28 "
-          />
-          <h1 className="text-4xl font-kaushan md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow">
+        <div className="relative z-20 h-full flex flex-col justify-center items-center md:items-start px-8 md:px-12 lg:px-32 text-white">
+          <div className="flex flex-col mb-3 gap-1 justify-center items-center">
+            <Image
+              src={logo}
+              alt="PorluCoffee Logo"
+              className="rounded-full bg-white w-20 h-20 md:w-24 md:h-24 lg:h-28 lg:w-28 "
+            />
+            <Image
+              src={textLogo}
+              alt="PorluCoffee Logo"
+              className="w-24 md:w-28 lg:w-32 object-contain"
+            />
+          </div>
+          <h1 className="text-3xl font-kaushan md:text-4xl lg:text-5xl font-extrabold mb-1 leading-tight drop-shadow">
             Perfect Arabica,
           </h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-poppins font-bold text-green-500 mb-4">
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-center md:text-start font-poppins font-bold text-green-500 mb-4">
             From Doloksanggul, North Sumatera.
           </h2>
-          <p className="md:text-lg lg:text-xl font-jura text-gray-100 max-w-2xl mb-8">
+          <p className="md:text-lg lg:text-xl text-center md:text-start font-jura text-gray-100 max-w-2xl mb-8">
             PorluCoffee menawarkan kualitas dari kopi yang dipilih secara matang
             untuk menghadirkan pengalaman minum kopi yang sempurna setiap hari.
           </p>
@@ -162,6 +170,18 @@ export default function Home() {
             bukan hanya produk — ini adalah warisan yang kami banggakan.
           </p>
         </div>
+      </section>
+
+      <section className="mt-32 bg-gradient-to-b bg-black/90 py-20 flex flex-col gap-12 justify-center items-center">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl text-white text-center font-kaushan">
+          Hilirisasi Pembuatan{" "}
+          <span className="text-green-600 font-semibold font-raleway">
+            PorluCoffee
+          </span>
+        </h1>
+        <video width="1100px" height="1100px" autoPlay loop muted playsInline>
+          <source src="/assets/porlucoffee-video1.mp4" type="video/mp4" />
+        </video>
       </section>
 
       {/* sect 4 (best of) */}
