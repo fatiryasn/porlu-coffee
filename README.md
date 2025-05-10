@@ -4,7 +4,7 @@ This is the Repository of Official PorluCoffee Website, developed by Fatir
 [https://porlucoffee.com](https://porlucoffee.com)
 
 ## 📷 Preview
-![Preview](preview-image-url-di-sini.png) 
+![Preview](./public/web-preview.png) 
 
 ## Tech Stack
 - Next JS
