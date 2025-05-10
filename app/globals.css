@@ -1,12 +1,118 @@
 @import "tailwindcss";
 
-@theme{
-    --font-poppins: var(--font-poppins);
-    --font-raleway: var(--font-raleway);
-    --font-quicksand: var(--font-quicksand);
-    --font-outfit: var(--font-outfit);
-    --font-jura: var(--font-jura);
-    --font-kaushan: var(--font-kaushan);
-    --font-grenze: var(--font-grenze)
-    
+@theme {
+  --font-poppins: var(--font-poppins);
+  --font-raleway: var(--font-raleway);
+  --font-quicksand: var(--font-quicksand);
+  --font-outfit: var(--font-outfit);
+  --font-jura: var(--font-jura);
+  --font-kaushan: var(--font-kaushan);
+  --font-grenze: var(--font-grenze);
 }
+
+.animate-fadeSlideIn {
+  animation: fadeSlideIn 1s ease-out forwards;
+}
+.animate-fadeDown {
+  animation: fadeDown 1s ease-out forwards;
+}
+.animate-onlyFade{
+    animation: onlyFade 2s ease forwards;
+}
+.animate-onlyFade2{
+  animation: onlyFade2 0.5s ease-in forwards;
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes onlyFade {
+  0% {
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes onlyFade2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.shine-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 2.5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+.shine-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.shine-button:hover {
+  transform: scale(1.01) translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 128, 0, 0.3);
+}
+
+
+
+.typewriter span {
+  opacity: 0;
+  animation: appear 0.03s forwards;
+  animation-delay: calc(var(--char-index) * 0.03s);
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+

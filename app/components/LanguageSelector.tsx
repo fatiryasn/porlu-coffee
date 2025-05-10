@@ -1,21 +1,17 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useRouter, usePathname } from "next/navigation";
-import Image from "next/image";
-import indo from "../../public/assets/id.png";
-import brit from "../../public/assets/uk.png";
+import { usePathname } from "next/navigation";
 
 const pathMap: Record<string, { en: string; id: string }> = {
-  "/": { en: "/", id: "/id" },
-  "/products": { en: "/products", id: "/id/produk" },
-  "/about": { en: "/about", id: "/id/tentang-kami" },
-  "/contact": { en: "/contact", id: "/id/kontak" },
-  "/collaborate": { en: "/collaborate", id: "/id/kolaborasi" },
+  "/": { en: "/", id: "/id/" },
+  "/products/": { en: "/products/", id: "/id/produk/" },
+  "/about/": { en: "/about/", id: "/id/tentang-kami/" },
+  "/contact/": { en: "/contact/", id: "/id/kontak/" },
+  "/collaborate/": { en: "/collaborate/", id: "/id/kolaborasi/" },
 };
 
 const LanguageSelector = () => {
-  const router = useRouter();
   const pathname = usePathname();
   const [selectedLanguage, setSelectedLanguage] = useState<"en" | "id">("en");
   const [open, setOpen] = useState(false);
@@ -45,23 +41,30 @@ const LanguageSelector = () => {
     setSelectedLanguage(lang);
     setOpen(false);
 
-    const currentPath = pathname.startsWith("/id")
-      ? pathname.replace(/^\/id/, "")
-      : pathname;
+    let currentPath = pathname;
+
+    if (currentPath.startsWith("/id/")) {
+      currentPath = currentPath.replace(/^\/id/, "");
+    } else if (currentPath === "/id") {
+      currentPath = "/";
+    }
 
     const matchedPath = Object.entries(pathMap).find(
       ([, paths]) =>
-        paths.en === currentPath ||
-        paths.id.replace(/^\/id/, "") === currentPath
+        (lang === "en" && paths.id === `/id${currentPath}`) ||
+        (lang === "id" && paths.en === currentPath)
     );
+
+    let newPath: string;
 
     if (matchedPath) {
       const [, paths] = matchedPath;
-      const newPath = lang === "id" ? paths.id : paths.en;
-      router.push(newPath);
+      newPath = lang === "id" ? paths.id : paths.en;
     } else {
-      router.push(lang === "id" ? `/id${currentPath}` : currentPath);
+      newPath = lang === "id" ? `/id${currentPath}` : currentPath;
     }
+
+    window.location.href = newPath;
   };
 
   return (
@@ -70,12 +73,11 @@ const LanguageSelector = () => {
         onClick={() => setOpen((prev) => !prev)}
         className="flex items-center font-semibold bg-white/90 cursor-pointer hover:bg-gray-200 text-gray-700 border border-gray-300 py-1 px-3 rounded-lg shadow-sm text-sm md:text-base font-jura"
       >
-        <Image
-          src={selectedLanguage === "en" ? brit : indo}
+        <img
+          src={selectedLanguage === "en" ? "/assets/uk.png" : "/assets/id.png"}
           alt="flag"
-          width={20}
-          height={20}
-          className="mr-1 lg:mr-2 rounded-xs object-cover"
+          className="mr-1 lg:mr-2 rounded-xs object-cover w-6 h-3"
+          loading="lazy"
         />
         {selectedLanguage.toUpperCase()}
         <span className="ml-0.5 lg:ml-2 text-gray-500">▼</span>
@@ -87,12 +89,11 @@ const LanguageSelector = () => {
             onClick={() => changeLanguage("en")}
             className="flex w-full font-semibold items-center px-3 py-2 hover:bg-gray-100 text-sm"
           >
-            <Image
-              src={brit}
+            <img
+              src="/assets/uk.png"
               alt="EN"
-              width={20}
-              height={20}
-              className="mr-2 rounded-xs"
+              className="mr-2 rounded-xs w-6 h-3"
+              loading="lazy"
             />
             EN
           </button>
@@ -100,12 +101,11 @@ const LanguageSelector = () => {
             onClick={() => changeLanguage("id")}
             className="flex w-full items-center px-3 py-2 hover:bg-gray-100 text-sm"
           >
-            <Image
-              src={indo}
+            <img
+              src="/assets/id.png"
               alt="ID"
-              width={20}
-              height={20}
-              className="mr-2 rounded-xs object-cover"
+              className="mr-2 rounded-xs w-6 h-3"
+              loading="lazy"
             />
             ID
           </button>

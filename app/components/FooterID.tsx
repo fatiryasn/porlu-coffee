@@ -1,19 +1,18 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import { FaInstagram } from "react-icons/fa";
-import logo from "../../public/assets/porlucoffee-logo.png";
 
 const Footer = () => {
   return (
     <footer className="px-8 mt-16 md:px-32 pb-5 pt-24 bg-green-900 text-white">
       <div className="flex flex-col md:flex-row items-center justify-between gap-16">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <Image
-            src={logo}
+          <img
+            src="/assets/porlucoffee-logo.png"
             alt="PorluCoffee Logo"
             className="bg-white rounded-full border-[0.2px] border-gray-200 w-28 h-28 md:w-36 md:h-36 lg:w-40 lg:h-40"
+            loading="lazy"
           />
           <p className="mt-4 text-sm text-gray-200 max-w-sm font-quicksand">
             PorluCoffee adalah tempat terbaik untuk menikmati kopi asli yang
@@ -71,6 +70,8 @@ const Footer = () => {
             <a
               href="https://www.instagram.com/porlucoffee"
               className="hover:text-gray-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaInstagram />
             </a>

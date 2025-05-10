@@ -7,14 +7,10 @@ import { usePathname } from "next/navigation";
 
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineShoppingBag, MdOutlinePeople } from "react-icons/md";
-import Image from "next/image";
 import { HiOutlineXMark } from "react-icons/hi2";
 import { TbCirclesRelation } from "react-icons/tb";
 import { MdConnectWithoutContact } from "react-icons/md";
 
-import logo from "../../public/assets/porlucoffee-logo.png";
-import textLogo from "../../public/assets/porlucoffee-text-logo.png";
-import textLogoWhite from "../../public/assets/porlucoffee-text-logo-white.png";
 import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
@@ -43,20 +39,32 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 right-0 left-0 z-30 flex justify-between md:justify-center items-center md:gap-20 p-4 transition-all duration-300 ${navbarStyle}`}
+        className={`fixed ${
+          isHome && "animate-onlyFade"
+        } top-0 right-0 left-0 z-30 flex justify-between items-center md:gap-20 py-4 px-4 md:px-10 lg:px-20 transition-all duration-300 ${navbarStyle}`}
       >
-        <div className="flex justify-center items-center gap-1 md:gap-2">
-          <Image
-            src={logo}
-            alt="PorluCoffee Logo"
-            className={`w-10 h-10 md:w-12 md:h-12 ${logoStyle}`}
-          />
-          <Image
-            src={isHome ? (scrolled ? textLogo : textLogoWhite) : textLogo}
-            alt="PorluCoffe Text Logo"
-            className={`w-10 h-10 object-contain md:w-16 md:h-13 `}
-          />
-        </div>
+        <Link href={"/"}>
+          <div className="flex justify-center items-center gap-1 md:gap-2">
+            <img
+              src="/assets/porlucoffee-logo.png"
+              alt="PorluCoffee Logo"
+              className={`w-9 h-9 md:w-12 md:h-12 ${logoStyle}`}
+              loading="lazy"
+            />
+            <img
+              src={
+                isHome
+                  ? scrolled
+                    ? "/assets/porlucoffee-text-logo.png"
+                    : "/assets/porlucoffee-text-logo-white.png"
+                  : "/assets/porlucoffee-text-logo.png"
+              }
+              alt="PorluCoffe Text Logo"
+              className={`w-12 h-12 object-contain md:w-16 md:h-13 `}
+              loading="lazy"
+            />
+          </div>
+        </Link>
 
         <nav className="hidden md:flex justify-center items-center gap-6 font-jura">
           <Link
@@ -66,25 +74,25 @@ const Navbar = () => {
             <span>Home</span>
           </Link>
           <Link
-            href="/products"
+            href="/products/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Products</span>
           </Link>
           <Link
-            href="/about"
+            href="/about/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>About Us</span>
           </Link>
           <Link
-            href="/collaborate"
+            href="/collaborate/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Collaboration</span>
           </Link>
           <Link
-            href="/contact"
+            href="/contact/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Contact</span>
@@ -128,7 +136,7 @@ const Navbar = () => {
             <span>Home</span>
           </Link>
           <Link
-            href="/products"
+            href="/products/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -136,7 +144,7 @@ const Navbar = () => {
             <span>Products</span>
           </Link>
           <Link
-            href="/about"
+            href="/about/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -144,7 +152,7 @@ const Navbar = () => {
             <span>About Us</span>
           </Link>
           <Link
-            href="/collaborate"
+            href="/collaborate/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -152,7 +160,7 @@ const Navbar = () => {
             <span>Collaboration</span>
           </Link>
           <Link
-            href="/contact"
+            href="/contact/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >

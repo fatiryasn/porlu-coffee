@@ -3,9 +3,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaCheck } from "react-icons/fa6";
-import Image from "next/image";
-
-import abt1 from "../../public/assets/abt1.png";
 
 const CollabForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -79,10 +76,11 @@ const CollabForm = () => {
   return (
     <section className="mt-20 px-5 py-5 md:py-24 rounded-lg flex-col md:flex-row flex justify-center md:gap-9 lg:gap-20 gap-14">
       <div className="sm:px-10 md:px-0">
-        <Image
-          src={abt1}
+        <img
+          src="/assets/abt1.png"
           alt="Kolaborasi PorluCoffee"
           className="rounded-2xl md:rounded-r-md md:rounded-l-4xl object-cover h-96 w-full md:h-[45rem] md:w-[40rem]"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col w-full md:max-w-xl lg:max-w-lg sm:px-10 md:px-0">

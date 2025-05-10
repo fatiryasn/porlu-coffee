@@ -1,13 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { Metadata } from "next";
 
-import abt1 from "../../../public/assets/abt1.png";
-import abt3 from "../../../public/assets/abt3.png";
-import abt5 from "../../../public/assets/abt5.png";
-import founder from "../../../public/assets/founder.jpg";
-import news1 from "@/public/assets/news1.jpg";
-import news3 from "@/public/assets/news3.jpg";
 import Carousel from "../../components/Carousel";
 
 export const metadata: Metadata = {
@@ -21,20 +14,23 @@ const AboutPage = () => {
     <>
       <main className="pt-28 relative w-full min-h-[80vh] gap-10 flex flex-col bg-gray-100">
         <div className="flex max-h-[27rem]">
-          <Image
-            src={abt1}
-            alt="Tentang Porlucoffee"
-            className="object-cover w-[33%]"
+          <img
+            src="/assets/abt1.png"
+            alt="About Porlucoffee"
+            className="object-cover w-1/3"
+            loading="lazy"
           />
-          <Image
-            src={abt5}
-            alt="Tentang Porlucoffee"
-            className="object-cover w-[33%] grow"
+          <img
+            src="/assets/abt5.png"
+            alt="About Porlucoffee"
+            className="object-cover w-1/3 grow"
+            loading="lazy"
           />
-          <Image
-            src={abt3}
-            alt="Tentang Porlucoffee"
-            className="object-cover w-[33%]"
+          <img
+            src="/assets/abt3.png"
+            alt="About Porlucoffee"
+            className="object-cover w-1/3"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col items-center gap-5">
@@ -123,38 +119,40 @@ const AboutPage = () => {
       </section>
 
       <section className="mt-32 px-3 md:px-16 lg:px-24 flex flex-col lg:flex-row-reverse justify-center gap-5 lg:gap-8 xl:gap-14">
-              <div className="flex flex-col">
-                <h2 className="font-semibold font-kaushan text-2xl md:text-3xl lg:text-4xl">
-                  <span className="text-green-900 font-raleway">PorluCoffee</span>{" "}
-                  with Ir. Surip Mawardi
-                </h2>
-                <div className="flex items-center gap-2 mt-2">
-                  <div className="w-20 h-1 bg-green-600"></div>
-                  <h4 className="font-jura font-semibold md:text-xl lg:text-2xl">
-                    Bapak Kopi Indonesia
-                  </h4>
-                </div>
-                <p className="mt-2 max-w-xl text-sm md:text-[0.9rem] lg:text-base font-quicksand font-medium">
-                  Founder PorluCoffee berkunjung ke kebun kopi dengan Ir. Surip
-                  Mawardi, sosok yang dikenal luas sebagai pelopor riset kopi di
-                  Indonesia. PorluCoffee berkomitmen untuk mengangkat kopi Indonesia
-                  ke panggung dunia.
-                </p>
-                <div className="flex gap-2 lg:gap-5 lg:flex-col 2xl:flex-row xl:gap-10 mt-10">
-                  <Image
-                    src={news1}
-                    alt="PorluCoffee with Mr. Surip Mawardi"
-                    className="w-1/2 max-h-[18rem] lg:w-full  2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
-                  />
-                  <Image
-                    src={news3}
-                    alt="PorluCoffee with Mr. Surip Mawardi"
-                    className="w-1/2 max-h-[18rem] lg:w-full 2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
-                  />
-                </div>
-              </div>
-              <Carousel />
-            </section>
+        <div className="flex flex-col">
+          <h2 className="font-semibold font-kaushan text-2xl md:text-3xl lg:text-4xl">
+            <span className="text-green-900 font-raleway">PorluCoffee</span>{" "}
+            with Ir. Surip Mawardi
+          </h2>
+          <div className="flex items-center gap-2 mt-2">
+            <div className="w-20 h-1 bg-green-600"></div>
+            <h4 className="font-jura font-semibold md:text-xl lg:text-2xl">
+              Bapak Kopi Indonesia
+            </h4>
+          </div>
+          <p className="mt-2 max-w-xl text-sm md:text-[0.9rem] lg:text-base font-quicksand font-medium">
+            Founder PorluCoffee berkunjung ke kebun kopi dengan Ir. Surip
+            Mawardi, sosok yang dikenal luas sebagai pelopor riset kopi di
+            Indonesia. PorluCoffee berkomitmen untuk mengangkat kopi Indonesia
+            ke panggung dunia.
+          </p>
+          <div className="flex gap-2 lg:gap-5 lg:flex-col 2xl:flex-row xl:gap-10 mt-10">
+            <img
+              src="/assets/news1.jpg"
+              alt="PorluCoffee with Mr. Surip Mawardi"
+              className="w-1/2 max-h-[18rem] lg:w-full  2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
+              loading="lazy"
+            />
+            <img
+              src="/assets/news3.jpg"
+              alt="PorluCoffee with Mr. Surip Mawardi"
+              className="w-1/2 max-h-[18rem] lg:w-full 2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <Carousel />
+      </section>
 
       {/* Visi & Misi */}
       <section className="flex flex-col items-center mt-48 px-6 md:px-12 lg:px-24 gap-20">
@@ -212,10 +210,11 @@ const AboutPage = () => {
 
         <div className="flex flex-col md:flex-row justify-center gap-20">
           <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 md:w-lg flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
-            <Image
-              src={founder}
+            <img
+              src="/assets/founder.jpg"
               alt="Founder PorluCoffee - Muhammad Aslam Fikri"
               className="w-40 h-40 md:w-52 md:h-52 object-cover rounded-full mb-6 border-4 border-white shadow-md"
+              loading="lazy"
             />
             <h3 className="text-3xl font-kaushan text-center">
               Muhammad Aslam Fikri

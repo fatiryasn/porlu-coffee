@@ -1,14 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { Metadata } from "next";
 
-import abt1 from "../../public/assets/abt1.png";
-import abt3 from "../../public/assets/abt3.png";
-import abt5 from "../../public/assets/abt5.png";
-import founder from "../../public/assets/founder.jpg";
-
-import news1 from "../../public/assets/news1.jpg";
-import news3 from "../../public/assets/news3.jpg";
 import Carousel from "../components/Carousel";
 
 export const metadata: Metadata = {
@@ -22,20 +14,23 @@ const AboutPage = () => {
     <>
       <main className="pt-28 relative w-full min-h-[80vh] gap-10 flex flex-col bg-gray-100">
         <div className="flex max-h-[27rem]">
-          <Image
-            src={abt1}
+          <img
+            src="/assets/abt1.png"
             alt="About Porlucoffee"
             className="object-cover w-1/3"
+            loading="lazy"
           />
-          <Image
-            src={abt5}
+          <img
+            src="/assets/abt5.png"
             alt="About Porlucoffee"
             className="object-cover w-1/3 grow"
+            loading="lazy"
           />
-          <Image
-            src={abt3}
+          <img
+            src="/assets/abt3.png"
             alt="About Porlucoffee"
             className="object-cover w-1/3"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col items-center gap-5">
@@ -142,15 +137,17 @@ const AboutPage = () => {
             to the world stage.
           </p>
           <div className="flex gap-2 lg:gap-5 lg:flex-col 2xl:flex-row xl:gap-10 mt-10">
-            <Image
-              src={news1}
+            <img
+              src="/assets/news1.jpg"
               alt="PorluCoffee with Mr. Surip Mawardi"
               className="w-1/2 max-h-[18rem] lg:w-full  2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
+              loading="lazy"
             />
-            <Image
-              src={news3}
+            <img
+              src="/assets/news3.jpg"
               alt="PorluCoffee with Mr. Surip Mawardi"
               className="w-1/2 max-h-[18rem] lg:w-full 2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -213,10 +210,11 @@ const AboutPage = () => {
 
         <div className="flex flex-col md:flex-row justify-center gap-20">
           <div className="bg-gray-200/30 backdrop-blur-lg rounded-2xl p-5 md:w-lg flex flex-col items-center shadow-xl hover:scale-[101%] hover:translate-y-[-5px] transition">
-            <Image
-              src={founder}
+            <img
+              src="/assets/founder.jpg"
               alt="Founder PorluCoffee - Muhammad Aslam Fikri"
               className="w-40 h-40 md:w-52 md:h-52 object-cover rounded-full mb-6 border-4 border-white shadow-md"
+              loading="lazy"
             />
             <h3 className="text-3xl font-kaushan text-center">
               Muhammad Aslam Fikri

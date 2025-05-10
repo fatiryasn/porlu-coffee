@@ -7,19 +7,15 @@ import { usePathname } from "next/navigation";
 
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineShoppingBag, MdOutlinePeople } from "react-icons/md";
-import Image from "next/image";
 import { HiOutlineXMark } from "react-icons/hi2";
 import { TbCirclesRelation } from "react-icons/tb";
 import { MdConnectWithoutContact } from "react-icons/md";
 
-import logo from "../../public/assets/porlucoffee-logo.png"
-import textLogo from "../../public/assets/porlucoffee-text-logo.png"
-import textLogoWhite from "../../public/assets/porlucoffee-text-logo-white.png"
 import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
   const pathname = usePathname();
-  const isHome = pathname === "/id" || pathname === "/";
+  const isHome = pathname === "/id/" || pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -43,48 +39,60 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 right-0 left-0 z-30 flex justify-between md:justify-center items-center md:gap-20 p-4 transition-all duration-300 ${navbarStyle}`}
+        className={`fixed ${
+          isHome && "animate-onlyFade"
+        } top-0 right-0 left-0 z-30 flex justify-between items-center md:gap-20 py-4 px-4 md:px-10 lg:px-20 transition-all duration-300 ${navbarStyle}`}
       >
-        <div className="flex justify-center items-center gap-1 md:gap-2">
-          <Image
-            src={logo}
-            alt="PorluCoffee Logo"
-            className={`w-10 h-10 md:w-12 md:h-12 ${logoStyle}`}
-          />
-          <Image
-            src={isHome ? (scrolled ? textLogo : textLogoWhite) : textLogo}
-            alt="PorluCoffe Text Logo"
-            className={`w-10 h-10 object-contain md:w-16 md:h-13 `}
-          />
-        </div>
+        <Link href={"/id/"}>
+          <div className="flex justify-center items-center gap-1 md:gap-2">
+            <img
+              src="/assets/porlucoffee-logo.png"
+              alt="PorluCoffee Logo"
+              className={`w-9 h-9 md:w-12 md:h-12 ${logoStyle}`}
+              loading="lazy"
+            />
+            <img
+              src={
+                isHome
+                  ? scrolled
+                    ? "/assets/porlucoffee-text-logo.png"
+                    : "/assets/porlucoffee-text-logo-white.png"
+                  : "/assets/porlucoffee-text-logo.png"
+              }
+              alt="PorluCoffe Text Logo"
+              className={`w-12 h-12 object-contain md:w-16 md:h-13 `}
+              loading="lazy"
+            />
+          </div>
+        </Link>
 
         <nav className="hidden md:flex justify-center items-center gap-6 font-jura">
           <Link
-            href="/id"
+            href="/id/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Beranda</span>
           </Link>
           <Link
-            href="/id/produk"
+            href="/id/produk/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Produk</span>
           </Link>
           <Link
-            href="/id/tentang-kami"
+            href="/id/tentang-kami/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Tentang Kami</span>
           </Link>
           <Link
-            href="/id/kolaborasi"
+            href="/id/kolaborasi/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Kolaborasi</span>
           </Link>
           <Link
-            href="/id/kontak"
+            href="/id/kontak/"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Kontak</span>
@@ -120,7 +128,7 @@ const Navbar = () => {
         </div>
         <nav className="flex flex-col gap-4 p-4 text-base font-jura">
           <Link
-            href="/id"
+            href="/id/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -128,7 +136,7 @@ const Navbar = () => {
             <span>Beranda</span>
           </Link>
           <Link
-            href="/id/produk"
+            href="/id/produk/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -136,7 +144,7 @@ const Navbar = () => {
             <span>Produk</span>
           </Link>
           <Link
-            href="/id/tentang-kami"
+            href="/id/tentang-kami/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -144,7 +152,7 @@ const Navbar = () => {
             <span>Tentang Kami</span>
           </Link>
           <Link
-            href="/id/kolaborasi"
+            href="/id/kolaborasi/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -152,7 +160,7 @@ const Navbar = () => {
             <span>Kolaborasi</span>
           </Link>
           <Link
-            href="/id/kontak"
+            href="/id/kontak/"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >

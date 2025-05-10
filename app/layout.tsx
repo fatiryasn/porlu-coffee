@@ -51,9 +51,10 @@ const grenze = Grenze({
 
 export const metadata: Metadata = {
   title: "PorluCoffee",
-  description: "Kopi dari dataran tinggi Doloksanggul, Sumatera Utara",
-  icons: {
-    icon: "/assets/porlucoffee-logo.png",
+  description:
+    "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
+  twitter: {
+    card: "summary_large_image"
   },
 };
 

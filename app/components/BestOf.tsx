@@ -1,14 +1,19 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
-interface Product {
+type Variant = {
+  name: string;
+  price: number;
+};
+
+type Product =  {
   id: number;
   productName: string;
   price: number;
   image: string;
+  variants?: Variant[]
 }
 
 const BestOf = () => {
@@ -32,8 +37,8 @@ const BestOf = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-green-200 to-blue-300 py-20 md:py-5 px-6 md:px-12 lg:px-32">
-      <div className="text-center mb-10">
+    <section className="bg-gradient-to-b from-green-200 to-blue-300 py-20  md:px-12 lg:px-32">
+      <div className="text-center mb-10 px-6">
         <h2 className="text-2xl md:text-4xl font-kaushan font-bold text-gray-800 mb-2 md:mb-4">
           Best of{" "}
           <span className="font-raleway text-green-900">PorluCoffee</span>
@@ -44,33 +49,35 @@ const BestOf = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10">
+      <div className="flex flex-wrap justify-center md:px-10 gap-2 md:gap-5 lg:gap-16">
         {loading && (
           <>
-            <div className="flex bg-white/60 animate-pulse h-40 rounded-2xl shadow-md px-4 py-3 gap-50 items-center"></div>
-            <div className="flex bg-white/60 animate-pulse h-40 rounded-2xl shadow-md px-4 py-3 gap-50 items-center"></div>
-            <div className="flex bg-white/60 animate-pulse h-40 rounded-2xl shadow-md px-4 py-3 gap-50 items-center"></div>
-            <div className="flex bg-white/60 animate-pulse h-40 rounded-2xl shadow-md px-4 py-3 gap-50 items-center"></div>
+            <div className="flex bg-white/60 animate-pulse w-40 h-40 md:h-52 md:w-52 lg:h-60 lg:w-60 xl:w-72 xl:h-72 rounded-2xl shadow-md px-4 py-3 gap-50 items-center"></div>
+            <div className="flex bg-white/60 animate-pulse w-40 h-40 md:h-52 md:w-52 lg:h-60 lg:w-60 xl:w-72 xl:h-72 rounded-2xl shadow-md px-4 py-3 gap-50 items-center"></div>
+            <div className="flex bg-white/60 animate-pulse w-40 h-40 md:h-52 md:w-52 lg:h-60 lg:w-60 xl:w-72 xl:h-72 rounded-2xl shadow-md px-4 py-3 gap-50 items-center"></div>
+            <div className="flex bg-white/60 animate-pulse w-40 h-40 md:h-52 md:w-52 lg:h-60 lg:w-60 xl:w-72 xl:h-72 rounded-2xl shadow-md px-4 py-3 gap-50 items-center"></div>
           </>
         )}
         {products.map((product) => (
           <div
             key={product.id}
-            className="flex bg-white rounded-2xl shadow-md hover:shadow-lg transition px-4 py-3 gap-5 border-[0.1px] border-yellow-600 items-center hover:scale-[101%] hover:translate-y-[-4px]"
+            className="flex flex-col bg-white rounded-2xl shadow-md hover:shadow-lg transition p-1 gap-6 border-[0.1px] border-yellow-600 hover:scale-[101%] hover:translate-y-[-4px]"
           >
-            <Image
+            <img
               src={`/${product.image}`}
               alt={product.productName}
-              width={100}
-              height={100}
-              className="w-24 h-24 md:h-28 md:w-28 lg:w-36 lg:h-36 object-cover rounded-xl shrink-0"
+              className="w-40 h-40 md:h-52 md:w-52 lg:h-60 lg:w-60 xl:w-72 xl:h-72 object-cover rounded-xl shrink-0"
+              loading="lazy"
             />
-            <div className="max-w-sm">
-              <h3 className="text-lg md:text-xl font-raleway font-semibold text-gray-800 mb-1">
+            <div className="max-w-40 md:max-w-52 lg:max-w-60 xl:max-w-72 px-1 pb-3 md:px-4">
+              <h3 className="md:text-lg lg:text-xl font-outfit font-semibold text-gray-800 mb-1">
                 {product.productName}
               </h3>
-              <p className="text-emerald-800 text-base font-semibold font-raleway">
-                Rp{product.price.toLocaleString("id-ID")}
+              <p className="text-emerald-900 text-sm md:text-base font-semibold font-jura">
+                Rp
+                {(product.variants?.[0]?.price ?? product.price).toLocaleString(
+                  "id-ID"
+                )}
               </p>
             </div>
           </div>
@@ -78,8 +85,8 @@ const BestOf = () => {
       </div>
 
       <div className="mt-10 flex justify-center items-center">
-        <Link href="/products">
-          <button className="text-gray-50 bg-green-700 rounded-xl hover:bg-green-900 transition cursor-pointer font-poppins font-semibold px-5 py-3">
+        <Link href="/products/">
+          <button className="shine-button bg-green-600 hover:bg-green-700 transition px-5 py-3 md:px-6 md:py-3 text-sm md:text-base cursor-pointer rounded-full font-poppins font-semibold text-white shadow-lg">
             See More
           </button>
         </Link>

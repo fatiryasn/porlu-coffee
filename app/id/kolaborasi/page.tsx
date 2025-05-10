@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { Metadata } from "next";
 
-import collabHero from "../../../public/assets/collab-hero.jpg";
 import CollabForm from "../components/CollabForm";
 
 export const metadata: Metadata = {
@@ -15,11 +13,11 @@ const CollabPage = () => {
     <>
       <main className="pt-16 relative w-full flex justify-center mb-12 md:mb-5 xl:mb-0 ">
         <div className="relative w-full h-[32rem] md:h-[25rem] rounded-b-[3rem] shadow-[0px_10px_30px_1px_#7d947c] md:shadow-none overflow-hidden">
-          <Image
-            src={collabHero}
+          <img
+            src="/assets/collab-hero.jpg"
             alt="Hero Background"
             className="object-cover w-full h-full object-center "
-            priority
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-black/45 z-10" />
           <div className="absolute inset-0 flex flex-col gap-2 items-center justify-center z-20">
