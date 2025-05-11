@@ -5,19 +5,32 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="px-8 mt-16 md:px-32 pb-5 pt-24 bg-green-900 text-white">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-16">
-        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+    <footer className="px-8  md:px-32 pb-5 pt-16 bg-green-900 text-white border-t border-green-500">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-20 lg:gap-30">
+        <div className="flex flex-col items-center gap-2 shrink-0">
           <img
             src="/assets/porlucoffee-logo.png"
             alt="PorluCoffee Logo"
-            className="bg-white rounded-full border-[0.2px] border-gray-200 w-28 h-28 md:w-36 md:h-36 lg:w-40 lg:h-40"
+            className="bg-white rounded-full border-[0.2px] border-gray-200 w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36"
             loading="lazy"
           />
-          <p className="mt-4 text-sm text-gray-200 max-w-sm font-quicksand">
-            PorluCoffee is the best place to enjoy authentic coffee that is rich
-            in taste and culture.
-          </p>
+          <img
+            src="/assets/porlucoffee-text-logo-white.png"
+            alt="PorluCoffee Logo"
+            className="object-contain  w-28 md:w-36 lg:w-40"
+            loading="lazy"
+          />
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold mb-4 font-raleway">
+            Contact Us
+          </h3>
+          <ul className="text-gray-200 text-sm font-quicksand space-y-2">
+            <li>Email: porlucoffee@gmail.com</li>
+            <li>Telp: +62 822 7778 6223</li>
+            <li>Address: Pendidikan Street, Doloksanggul</li>
+          </ul>
         </div>
 
         <div>
@@ -50,17 +63,6 @@ const Footer = () => {
                 Contact
               </Link>
             </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="text-xl font-semibold mb-4 font-raleway">
-            Contact Us
-          </h3>
-          <ul className="text-gray-200 text-sm font-quicksand space-y-2">
-            <li>Email: porlucoffee@gmail.com</li>
-            <li>Telp: +62 822 7778 6223</li>
-            <li>Address: Pendidikan Street, Doloksanggul</li>
           </ul>
         </div>
 

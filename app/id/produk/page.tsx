@@ -13,7 +13,7 @@ const ProdukPage = () => {
       <main className="pt-24 relative w-full flex justify-center px-4 mb-12 md:mb-5 xl:mb-0">
         <div className="relative w-full h-[30rem] md:w-[80rem] sm:h-[20rem] rounded-lg overflow-hidden">
           <img
-            src="/assets/product-hero.png"
+            src="/assets/product-hero.webp"
             alt="Hero Background"
             className="object-cover w-full h-full object-center"
             loading="lazy"

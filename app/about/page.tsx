@@ -21,7 +21,7 @@ const AboutPage = () => {
             loading="lazy"
           />
           <img
-            src="/assets/abt5.png"
+            src="/assets/abt5.webp"
             alt="About Porlucoffee"
             className="object-cover w-1/3 grow"
             loading="lazy"
@@ -138,13 +138,13 @@ const AboutPage = () => {
           </p>
           <div className="flex gap-2 lg:gap-5 lg:flex-col 2xl:flex-row xl:gap-10 mt-10">
             <img
-              src="/assets/news1.jpg"
+              src="/assets/news1.webp"
               alt="PorluCoffee with Mr. Surip Mawardi"
               className="w-1/2 max-h-[18rem] lg:w-full  2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
               loading="lazy"
             />
             <img
-              src="/assets/news3.jpg"
+              src="/assets/news3.webp"
               alt="PorluCoffee with Mr. Surip Mawardi"
               className="w-1/2 max-h-[18rem] lg:w-full 2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
               loading="lazy"

@@ -13,6 +13,8 @@ This is the Repository of Official PorluCoffee Website, developed by Fatir
 ## Run on your local
 1. Clone this repo:
    ```bash
-   git clone https://github.com/fatiryasn/porlucoffee.git
+   git clone https://github.com/fatiryasn/porlu-coffee.git
 
-uh
+
+
+'uh' - A wise word

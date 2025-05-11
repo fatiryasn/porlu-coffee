@@ -3,7 +3,7 @@
     "id": 4,
     "productName": "Porlu Espresso Pouch Grade A",
     "price": 25000,
-    "image": "assets/porlucoffee-espresso_pouch.png",
+    "image": "assets/porlucoffee-espresso_pouch.webp",
     "categories": ["coffee", "grade_a", "pouch"],
     "description": {
       "id": "Espresso instan kualitas premium-kaya crema, body pekat, dan aroma intens. Praktis cukup diseduh air panas, cocok untuk shot cepat di mana saja tanpa kompromi rasa.",
@@ -13,12 +13,12 @@
   {
     "id": 1,
     "productName": "Regular Grade A",
-    "image": "assets/porlucoffee-regular1kg.png",
+    "image": "assets/porlucoffee-regular1kg.webp",
     "categories": ["coffee", "grade_a"],
     "variants": [
-      { "name": "1kg", "price": 470000, "image": "assets/porlucoffee-regular1kg.png" },
-      { "name": "500gr", "price": 240000, "image": "assets/porlucoffee-regular500gr.png" },
-      { "name": "250gr", "price": 120000, "image": "assets/porlucoffee-regular250gr.png" }
+      { "name": "1kg", "price": 470000, "image": "assets/porlucoffee-regular1kg.webp" },
+      { "name": "500gr", "price": 240000, "image": "assets/porlucoffee-regular500gr.webp" },
+      { "name": "250gr", "price": 120000, "image": "assets/porlucoffee-regular250gr.webp" }
     ],
     "description": {
       "id": "Biji kopi premium pilihan dari Doloksanggul, 100% Arabica. Cocok untuk penikmat kopi sejati dengan aroma rasa yang khas.",
@@ -29,7 +29,7 @@
     "id": 8,
     "productName": "Porlu Totebag",
     "price": 35000,
-    "image": "assets/porlucoffee-totebag.png",
+    "image": "assets/porlucoffee-totebag.webp",
     "categories": ["merch"],
     "description": {
       "id": "Praktis dan stylish! Totebag Porlu hadir dengan desain khas yang cocok dibawa ke kampus, kerja, atau sekadar jalan santai.",
@@ -40,7 +40,7 @@
     "id": 9,
     "productName": "Porlu T-Shirt Long Sleeve",
     "price": 80000,
-    "image": "assets/porlucoffee-tshirt_long_sleeve.png",
+    "image": "assets/porlucoffee-tshirt_long_sleeve.webp",
     "categories": ["merch"],
     "description": {
       "id": "Nyaman dipakai sepanjang hari dengan bahan adem dan desain minimalis khas Porlu - cocok untuk gaya santai namun tetap elegan.",
@@ -50,23 +50,23 @@
   {
     "id": 2,
     "productName": "Regular Grade B",
-    "image": "assets/porlucoffee-regular1kg.png",
+    "image": "assets/porlucoffee-regular1kg.webp",
     "categories": ["coffee", "grade_b"],
     "variants": [
       {
         "name": "1kg",
         "price": 180000,
-        "image": "assets/porlucoffee-regular1kg.png"
+        "image": "assets/porlucoffee-regular1kg.webp"
       },
       {
         "name": "500gr",
         "price": 90000,
-        "image": "assets/porlucoffee-regular500gr.png"
+        "image": "assets/porlucoffee-regular500gr.webp"
       },
       {
         "name": "250gr",
         "price": 50000,
-        "image": "assets/porlucoffee-regular250gr.png"
+        "image": "assets/porlucoffee-regular250gr.webp"
       }
     ],
     "description": {
@@ -78,7 +78,7 @@
     "id": 3,
     "productName": "Brown Sugar Milk Coffee (Can)",
     "price": 15000,
-    "image": "assets/porlucoffee-brownsugar.jpg",
+    "image": "assets/porlucoffee-brownsugar.webp",
     "categories": ["coffee"],
     "description": {
       "id": "Perpaduan kopi arabica dengan susu segar dan gula aren tradisional Kalen. Rasa manis alami, tekstur creamy, sempurna untuk kamu yang suka kopi kekinian penuh kehangatan lokal.",
@@ -89,7 +89,7 @@
     "id": 5,
     "productName": "Porlu Espresso Pouch Grade B",
     "price": 15000,
-    "image": "assets/porlucoffee-espresso_pouch.png",
+    "image": "assets/porlucoffee-espresso_pouch.webp",
     "categories": ["coffee", "grade_b", "pouch"],
     "description": {
       "id": "Espresso instan varian everyday: lebih mild, kafein pas, dengan sentuhan after-taste cokelat. Pilihan ekonomis untuk teman santai atau office break.",
@@ -100,7 +100,7 @@
     "id": 6,
     "productName": "Porlu Drip Grade A",
     "price": 50000,
-    "image": "assets/porlucoffee-drip.png",
+    "image": "assets/porlucoffee-drip.webp",
     "categories": ["coffee", "grade_a", "drip"],
     "description": {
       "id": "Kopi single-serve dalam kantong drip filter siap seduh, menggunakan biji Grade A pilihan Doloksanggul. Praktis tanpa ampas, nikmati cita rasa kopi kafe di mana saja.",
@@ -111,7 +111,7 @@
     "id": 7,
     "productName": "Porlu Drip Grade B",
     "price": 30000,
-    "image": "assets/porlucoffee-drip.png",
+    "image": "assets/porlucoffee-drip.webp",
     "categories": ["coffee", "grade_b", "drip"],
     "description": {
       "id": "Drip coffee kemasan sachet Grade B yang lebih ringan dan ekonomis. Rasa sedikit lebih asam dengan aroma herbal, cocok untuk rutinitas harian atau eksplorasi kopi baru.",
@@ -122,7 +122,7 @@
     "id": 10,
     "productName": "Porlu T-Shirt",
     "price": 70000,
-    "image": "assets/porlucoffee-tshirt_white_green.png",
+    "image": "assets/porlucoffee-tshirt_white_green.webp",
     "categories": ["merch"],
     "description": {
       "id": "Kaos kasual dengan logo Porlu yang ikonik, hadirkan semangat kopi lokal dalam tampilan simpel tapi berkarakter.",
@@ -133,7 +133,7 @@
     "id": 11,
     "productName": "Porlu Jersey",
     "price": 80000,
-    "image": "assets/porlucoffee-jersey.png",
+    "image": "assets/porlucoffee-jersey.webp",
     "categories": ["merch"],
     "description": {
       "id": "Tampil sporty dan penuh energi! Jersey Porlu dirancang untuk aktivitas harian maupun olahraga, dengan desain yang mencuri perhatian.",
@@ -144,7 +144,7 @@
     "id": 12,
     "productName": "Porlu Payung",
     "price": 80000,
-    "image": "assets/porlucoffee-payung.png",
+    "image": "assets/porlucoffee-payung.webp",
     "categories": ["merch"],
     "description": {
       "id": "Lindungi diri dari hujan atau terik dengan payung eksklusif Porlu. Kokoh, ringan, dan penuh gaya.",
@@ -155,7 +155,7 @@
     "id": 13,
     "productName": "Porlu Tumbler",
     "price": 70000,
-    "image": "assets/porlucoffee-tumbler.png",
+    "image": "assets/porlucoffee-tumbler.webp",
     "categories": ["merch"],
     "description": {
       "id": "Bawa kopi favoritmu ke mana saja! Tumbler Porlu menjaga minuman tetap panas atau dingin lebih lama dengan tampilan elegan.",
@@ -166,7 +166,7 @@
     "id": 14,
     "productName": "Porlu Mukena Travel",
     "price": 150000,
-    "image": "assets/porlucoffee-mukena.png",
+    "image": "assets/porlucoffee-mukena.webp",
     "categories": ["merch"],
     "description": {
       "id": "Ringan, ringkas, dan nyaman. Mukena travel Porlu adalah teman ibadah ideal untuk kamu yang aktif bepergian.",
@@ -177,7 +177,7 @@
     "id": 15,
     "productName": "Brown Sugar Milk Coffee (Bottle)",
     "price": 30000,
-    "image": "assets/porlucoffee-brownsugar_btl.jpg",
+    "image": "assets/porlucoffee-brownsugar_btl.webp",
     "categories": ["coffee"],
     "description": {
       "id": "Perpaduan sempurna antara arabica yang kuat, susu creamy, dan manis alami gula aren. Dikemas praktis, siap diminum kapan saja untuk menyegarkan harimu dengan cita rasa yang khas",

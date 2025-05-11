@@ -73,8 +73,7 @@ const ProductTabs = () => {
         : p.categories.includes(selectedCategory) &&
           !p.categories.includes("merch")
     )
-    .sort((a, b) => a.productName.localeCompare(b.productName));
-
+    
   const handleZoomOutClick = () => {
     setIsPopupVisible(true);
   };
@@ -179,7 +178,7 @@ const ProductTabs = () => {
               <hr className="w-full text-gray-50 mb-3" />
 
               {/* Products List */}
-              <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 md:gap-3 lg:gap-5 md:px-4 overflow-y-auto max-h-[40dvh] md:max-h-[80dvh]">
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 md:gap-3 lg:gap-5 md:px-4 overflow-y-auto max-h-[80dvh]">
                 {loading &&
                   Array.from({ length: 8 }).map((_, idx) => (
                     <div
@@ -283,7 +282,7 @@ const ProductTabs = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="hover:underline flex items-center gap-2 font-quicksand text-center transition cursor-pointer text-white">
+            <button className="hover:underline flex items-center gap-1 font-quicksand text-center transition cursor-pointer text-white">
               <FaWhatsapp /> Whatsapp
             </button>
           </a>

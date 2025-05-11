@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 
-const images = ["/assets/news2.jpg", "/assets/news4.jpg", "/assets/news5.jpg"];
+const images = ["/assets/news2.webp", "/assets/news4.webp", "/assets/news5.webp"];
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

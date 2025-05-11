@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <>
-      <main className="flex flex-col justify-center items-center pt-30">
+      <main className="flex flex-col justify-center items-center pt-30 mb-12">
         <h1 className="font-raleway text-3xl md:text-4xl font-semibold text-green-900">
           Hubungi Kami
         </h1>
@@ -26,7 +26,7 @@ const ContactPage = () => {
         </p>
       </main>
 
-      <section className="flex flex-col justify-center items-center md:items-start mt-28 md:flex-row gap-16 md:gap-8 lg:gap-16 px-5">
+      <section className="flex flex-col justify-center items-center md:items-start mt-28 mb-12 md:flex-row gap-16 md:gap-8 lg:gap-16 px-5">
         <div
           className="relative text-gray-100 flex flex-col p-7 rounded-xl max-w-md lg:max-w-xl h-[40rem] overflow-hidden"
           style={{

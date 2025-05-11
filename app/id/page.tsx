@@ -3,8 +3,32 @@ import { Metadata } from "next";
 
 import { FaInstagram } from "react-icons/fa";
 import BestOf from "./components/BestOf";
+import Carousel from "../components/Carousel";
 
 const text = `PorluCoffee menawarkan kualitas dari kopi yang dipilih secara matang untuk menghadirkan pengalaman minum kopi yang sempurna setiap hari.`;
+
+const instaImages = [
+  {
+    image: "/assets/porlucoffee-story.png",
+    to: "https://www.instagram.com/p/DI---YHxhxP/",
+  },
+  {
+    image: "/assets/porlucoffee-espresso_pouch.webp",
+    to: "https://www.instagram.com/p/DJVcCofTUnv/",
+  },
+  {
+    image: "/assets/porlucoffee-brownsugar.webp",
+    to: "https://www.instagram.com/p/DJYlevpRXwQ/",
+  },
+  {
+    image: "/assets/porlucoffee-insta-image.jpg",
+    to: "https://www.instagram.com/p/DJYlQCURHRb/",
+  },
+  {
+    image: "/assets/porlucoffee-drip_coffee.jpg",
+    to: "https://www.instagram.com/p/DJZR_FfJzfy/",
+  },
+];
 
 const renderTypingText = () =>
   text.split("").map((char, i) => (
@@ -25,7 +49,7 @@ export default function Home() {
       {/* sect 1 (hero) */}
       <main className="relative h-[100dvh] w-full overflow-hidden">
         <img
-          src="/assets/abt5.png"
+          src="/assets/abt5.webp"
           alt="Hero Background"
           className="z-0 absolute inset-0 object-cover object-center lg:object-right-bottom w-full h-full"
           loading="lazy"
@@ -79,7 +103,7 @@ export default function Home() {
           </p>
           <div className="h-80 overflow-hidden md:h-[30rem] mt-5 rounded-l-[50px] rounded-r-sm">
             <img
-              src="/assets/porlucoffee-product1.jpg"
+              src="/assets/porlucoffee-product1.webp"
               alt="PorluCoffee Product"
               className="object-cover h-full w-full aspect-square hover:scale-110 transition"
               loading="lazy"
@@ -214,11 +238,44 @@ export default function Home() {
         ></path>
       </svg>
 
+      <section className="mt-20 md:mt-0 px-3 md:px-16 lg:px-24 flex flex-col lg:flex-row-reverse justify-center gap-5 lg:gap-8 xl:gap-14">
+        <div className="flex flex-col">
+          <h2 className="font-semibold font-kaushan text-2xl md:text-3xl lg:text-4xl">
+            <span className="text-green-900 font-raleway">PorluCoffee</span>{" "}
+            with Ir. Surip Mawardi
+          </h2>
+          <div className="flex items-center gap-2 mt-2">
+            <div className="w-20 h-1 bg-green-600"></div>
+            <h4 className="font-jura font-semibold md:text-xl lg:text-2xl">
+              Indonesian Coffee Hero
+            </h4>
+          </div>
+          <p className="mt-2 max-w-xl text-sm md:text-[0.9rem] lg:text-base font-quicksand font-medium">
+            PorluCoffee Founder visits a coffee plantation with Ir. Surip
+            Mawardi, a figure widely known as a pioneer of coffee research in
+            Indonesia. PorluCoffee is committed to elevating Indonesian coffee
+            to the world stage.
+          </p>
+          <div className="flex gap-2 lg:gap-5 lg:flex-col 2xl:flex-row xl:gap-10 mt-10">
+            <img
+              src="/assets/news1.webp"
+              alt="PorluCoffee with Mr. Surip Mawardi"
+              className="w-1/2 max-h-[18rem] lg:w-full  2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
+              loading="lazy"
+            />
+            <img
+              src="/assets/news3.webp"
+              alt="PorluCoffee with Mr. Surip Mawardi"
+              className="w-1/2 max-h-[18rem] lg:w-full 2xl:w-[16rem] shrink-0 rounded-lg aspect-square object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <Carousel />
+      </section>
+
       {/* sect 6 (address) */}
-      <section
-        className="pb-20 mt-20 md:mt-0 px-5 md:px-10 lg:px-40"
-        id="lokasi"
-      >
+      <section className="pb-20 mt-48 px-5 md:px-10 lg:px-40" id="lokasi">
         <div className="flex items-center gap-5 mb-5">
           <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold font-kaushan text-gray-900 mb-4">
             Lokasi Kami
@@ -229,7 +286,7 @@ export default function Home() {
             kopi pilihan secara langsung.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row-reverse bg-green-200 border-[0.2px] border-green-800 md:p-5 rounded-xl justify-center lg:gap-10">
+        <div className="flex flex-col md:flex-row-reverse bg-green-200/50 border-[0.2px] border-green-800 md:p-5 rounded-xl justify-center lg:gap-10">
           <div className="p-5">
             <img
               src="/assets/porlucoffee-logo.png"
@@ -273,13 +330,13 @@ export default function Home() {
       </section>
 
       {/* sect 7 (insta) */}
-      <section className="flex flex-col items-center lg:items-start lg:flex-row justify-evenly py-24 mt-20 px-3 md:px-12 lg:px-24 xl:px-40 bg-gradient-to-b from-emerald-100 to-amber-200 lg:gap-5">
+      <section className="flex flex-col items-center lg:items-start lg:flex-row justify-evenly py-24 mt-20 px-3 md:px-12 lg:px-24 xl:px-40 bg-gradient-to-b to-green-800 via-green-200 from-gray-50/50 lg:gap-5">
         <div className="text-center flex flex-col items-center gap-3 lg:mt-32">
           <div className="flex ">
             <img
               src="/assets/porlucoffee-logo.png"
               alt="PorluCoffee Logo"
-              className="h-24 w-24 md:h-28 md:w-28"
+              className="h-24 w-24 md:h-28 md:w-28 bg-white rounded-full"
             />
             <img
               src="/assets/instagram.png"
@@ -287,10 +344,10 @@ export default function Home() {
               className="h-3 w-3 md:h-6 md:w-6"
             />
           </div>
-          <h2 className="text-sm md:text-base lg:text-lg font-semibold font-poppins text-yellow-800">
-            Follow kami di Instagram!
+          <h2 className="text-sm md:text-base lg:text-lg font-semibold font-outfit text-green-900">
+            Ikuti kami di Instagram!
           </h2>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-raleway text-green-700">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl bg-gradient-to-bl from-fuchsia-500 via-purple-600 to-yellow-500 font-semibold font-raleway bg-clip-text text-transparent">
             @porlucoffee
           </h1>
           <a
@@ -299,18 +356,28 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="flex items-center gap-1 border-2 border-white px-8 py-2 mt-5 rounded-3xl text-2xl font-poppins font-semibold text-white bg-green-600 cursor-pointer hover:bg-green-700 transition">
-              <span>GO </span> <FaInstagram />
+            <button className="flex items-center gap-1 border-2 border-white px-8 py-2 mt-5 rounded-3xl text-xl font-jura font-semibold text-white bg-green-600 cursor-pointer hover:bg-green-700 transition">
+              <span>Follow</span> <FaInstagram />
             </button>
           </a>
         </div>
 
-        <div className="grid grid-cols-3 gap-1 md:gap-2 lg:gap-4 mt-20 lg:mt-0">
-          {Array.from({ length: 9 }).map((_, index) => (
-            <div
+        <div className="grid grid-cols-2  gap-1 md:gap-2 lg:gap-4 mt-20 lg:mt-0">
+          {instaImages.map((item, index) => (
+            <a
               key={index}
-              className="w-28 h-28 sm:w-40 sm:h-40 xl:w-56 xl:h-56 bg-gray-100 rounded-sm"
-            ></div>
+              href={item.to}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="overflow-hidden rounded-sm">
+                <img
+                  src={item.image}
+                  alt="Porlu Coffee Image"
+                  className="aspect-square w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 h-auto object-cover transition hover:scale-110"
+                />
+              </div>
+            </a>
           ))}
         </div>
       </section>

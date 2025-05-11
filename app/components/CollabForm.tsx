@@ -27,24 +27,24 @@ const CollabForm = () => {
 
     // Validasi manual
     if (name.length < 3) {
-      setErrors("Nama minimal 3 karakter.");
+      setErrors("Name must be at least 3 characters.");
       setLoading(false);
       return;
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setErrors("Format email tidak valid.");
+      setErrors("Email format invalid.");
       setLoading(false);
       return;
     }
     const phoneRegex = /^[0-9+\s()-]{9,15}$/;
     if (!phoneRegex.test(phone)) {
-      setErrors("Format nomor telepon tidak valid.");
+      setErrors("Phone number format invalid.");
       setLoading(false);
       return;
     }
     if (message.length < 10) {
-      setErrors("Pesan harus minimal 10 karakter.");
+      setErrors("Message must be at least 10 characters.");
       setLoading(false);
       return;
     }
@@ -67,7 +67,7 @@ const CollabForm = () => {
       form.current?.reset();
     } catch (error) {
       console.error(error);
-      setErrors("Gagal mengirim pesan. Silakan coba lagi.");
+      setErrors("Sending failed, please retry.");
     } finally {
       setLoading(false);
     }
@@ -180,7 +180,7 @@ const CollabForm = () => {
             disabled={loading}
             className="bg-green-800 w-full text-white font-semibold font-poppins cursor-pointer transition px-6 py-2 rounded-lg hover:bg-green-700 disabled:bg-gray-400"
           >
-            {loading ? "Mengirim..." : "Kirim"}
+            {loading ? "Sending..." : "Send"}
           </button>
 
           {errors && (
@@ -191,7 +191,7 @@ const CollabForm = () => {
 
           {success && (
             <p className="mt-2 p-5 rounded-lg bg-lime-800 text-gray-50 font-outfit font-bold text-center">
-              Pesan berhasil dikirim!
+              Message sent successfully!
             </p>
           )}
         </form>
