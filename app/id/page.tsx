@@ -5,7 +5,6 @@ import { FaInstagram } from "react-icons/fa";
 import BestOf from "./components/BestOf";
 import Carousel from "../components/Carousel";
 
-const text = `PorluCoffee menawarkan kualitas dari kopi yang dipilih secara matang untuk menghadirkan pengalaman minum kopi yang sempurna setiap hari.`;
 
 const instaImages = [
   {
@@ -28,19 +27,20 @@ const instaImages = [
     image: "/assets/porlucoffee-drip_coffee.jpg",
     to: "https://www.instagram.com/p/DJZR_FfJzfy/",
   },
+  {
+    image: "/assets/porlu-founder-with-mr-surip-mawardi.jpg",
+    to: "https://www.instagram.com/p/DKEMpT4RrbF/",
+  },
+  {
+    image: "/assets/porlucoffee-brownsugar_btl.webp",
+    to: "https://www.instagram.com/p/DKCaqoTJSKS/",
+  },
 ];
-
-const renderTypingText = () =>
-  text.split("").map((char, i) => (
-    <span key={i} style={{ "--char-index": i } as React.CSSProperties}>
-      {char}
-    </span>
-  ));
 
 export const metadata: Metadata = {
   title: "Beranda - PorluCoffee",
   description:
-    "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee adalah kopi yang berasal dari dataran tinggi Sumatera Utara, Doloksanggul",
+    "Perfect Arabica. Spesialis kopi dari Doloksanggul, Sumatera Utara. PorluCoffee adalah kopi yang berasal dari dataran tinggi Sumatera Utara, Doloksanggul",
 };
 
 export default function Home() {
@@ -72,15 +72,15 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col items-center md:items-start animate-fadeDown">
-            <h1 className="text-3xl font-kaushan md:text-4xl lg:text-5xl font-extrabold mb-1 leading-tight drop-shadow">
+            <h1 className="text-4xl font-kaushan md:text-5xl lg:text-6xl font-extrabold mb-2 leading-tight drop-shadow">
               Perfect Arabica,
             </h1>
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-center md:text-start font-poppins font-bold text-green-500 mb-4">
-              From Doloksanggul, North Sumatera.
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-center md:text-start font-poppins font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-green-400">
+              Specialty Coffee From Doloksanggul
             </h2>
-            <p className="text-sm md:text-lg  lg:text-xl text-center md:text-start font-jura text-gray-100 max-w-2xl mb-8 typewriter">
-              {renderTypingText()}
-            </p>
+            <h2 className="text-lg md:text-xl lg:text-2xl text-green-500 text-center md:text-start font-jura font-extrabold mb-7">
+              North Sumatera, Indonesia{" "}
+            </h2>
 
             <Link href="/products/">
               <button className="shine-button bg-green-600 hover:bg-green-700 transition px-4 py-2 md:px-6 md:py-3 text-sm md:text-base cursor-pointer rounded-full font-poppins font-semibold text-white shadow-lg">
@@ -101,11 +101,11 @@ export default function Home() {
             Kami tidak sekadar menyajikan kopi — tapi juga cerita, rasa, dan
             makna dalam setiap cangkir.
           </p>
-          <div className="h-80 overflow-hidden md:h-[30rem] mt-5 rounded-l-[50px] rounded-r-sm">
+          <div className="h-60 overflow-hidden md:h-[25rem] mt-2 md:mt-5 md:rounded-l-[50px] rounded-r-sm">
             <img
-              src="/assets/porlucoffee-product1.webp"
+              src="/assets/product-hero.webp"
               alt="PorluCoffee Product"
-              className="object-cover h-full w-full aspect-square hover:scale-110 transition"
+              className="object-contain rounded-l-[50px] md:rounded-l-none scale-110 h-full w-full aspect-square hover:scale-125 transition"
               loading="lazy"
             />
           </div>
@@ -347,7 +347,7 @@ export default function Home() {
           <h2 className="text-sm md:text-base lg:text-lg font-semibold font-outfit text-green-900">
             Ikuti kami di Instagram!
           </h2>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl bg-gradient-to-bl from-fuchsia-500 via-purple-600 to-yellow-500 font-semibold font-raleway bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-raleway text-gray-800">
             @porlucoffee
           </h1>
           <a

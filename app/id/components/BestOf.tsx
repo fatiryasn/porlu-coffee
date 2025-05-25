@@ -62,19 +62,19 @@ const BestOf = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="flex flex-col bg-white rounded-2xl shadow-md hover:shadow-lg transition p-1 gap-6 border-[0.1px] border-yellow-600 hover:scale-[101%] hover:translate-y-[-4px]"
+            className="flex flex-col bg-white/50 rounded-lg shadow-md hover:shadow-lg transition hover:scale-[101%] hover:translate-y-[-4px]"
           >
             <img
               src={`/${product.image}`}
               alt={product.productName}
-              className="w-40 h-40 md:h-52 md:w-52 lg:h-60 lg:w-60 xl:w-72 xl:h-72 object-cover rounded-xl shrink-0"
+              className="w-40 h-40 md:h-52 md:w-52 lg:h-60 lg:w-60 xl:w-72 xl:h-72 object-contain rounded-xl shrink-0"
               loading="lazy"
             />
-            <div className="max-w-40 md:max-w-52 lg:max-w-60 xl:max-w-72 px-1 pb-3 md:px-4">
-              <h3 className="md:text-lg lg:text-xl font-outfit font-semibold text-gray-800 mb-1">
+            <div className="bg-white py-3 px-3 lg:px-5 h-full max-w-40 rounded-b-lg md:max-w-52 lg:max-w-60 xl:max-w-72">
+              <h3 className="text-sm md:text-base lg:text-lg xl:text-xl font-outfit font-semibold text-gray-800 mb-1">
                 {product.productName}
               </h3>
-              <p className="text-emerald-900 text-sm md:text-base font-semibold font-jura">
+              <p className="text-emerald-900 text-xs md:text-sm lg:text-base font-semibold font-jura">
                 Rp
                 {(product.variants?.[0]?.price ?? product.price).toLocaleString(
                   "id-ID"
