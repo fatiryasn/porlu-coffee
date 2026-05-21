@@ -1,6 +1,6 @@
 "use client";
 import { MdClose } from "react-icons/md";
-import { usePathname } from "next/navigation"; // <--- Tambahkan ini
+import { usePathname } from "next/navigation";
 
 type Variant = {
   name: string;

@@ -4,7 +4,20 @@ import ProductTabs from "../../components/ProductTabs";
 
 export const metadata: Metadata = {
   title: "Produk - PorluCoffee",
-  description: "List lengkap dari seluruh produk original PorluCoffee"
+  description: "List lengkap dari seluruh produk original PorluCoffee",
+
+  keywords: [
+    "porlu coffee",
+    "porlucoffee",
+    "produk porlucoffee",
+    "menu porlucoffee",
+    "minuman porlucoffee",
+  ],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const ProdukPage = () => {

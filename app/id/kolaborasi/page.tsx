@@ -1,4 +1,3 @@
-import React from "react";
 import { Metadata } from "next";
 
 import CollabForm from "../components/CollabForm";
@@ -7,6 +6,19 @@ export const metadata: Metadata = {
   title: "Kolaborasi - PorluCoffee",
   description:
     "PorluCoffee membuka peluang kolaborasi dengan individu, brand, maupun komunitas untuk menciptakan inovasi tak terbatas. Hubungi kami untuk lebih lanjut!",
+
+  keywords: [
+    "porlu coffee",
+    "porlucoffee",
+    "kolaborasi porlucoffee",
+    "porlucoffee kemitraan",
+    "porlucoffee kolaborasi",
+  ],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 const CollabPage = () => {
   return (

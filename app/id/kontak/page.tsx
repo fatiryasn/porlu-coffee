@@ -1,4 +1,3 @@
-import React from "react";
 import { Metadata } from "next";
 
 import { MdEmail } from "react-icons/md";
@@ -10,6 +9,15 @@ export const metadata: Metadata = {
   title: "Kontak - PorluCoffee",
   description:
     "Kami siap mendengar Anda. Ajukan pertanyaan, sampaikan kekhawatiran, atau jalin kemitraan dan hubungan investor. Mari terhubung bersama PorluCoffee!",
+  keywords: [
+    "kontak porlucoffee",
+    "porlucoffee contact",
+    "hubungi porlucoffee",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const ContactPage = () => {

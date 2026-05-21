@@ -74,25 +74,25 @@ const Navbar = () => {
             <span>Home</span>
           </Link>
           <Link
-            href="/products/"
+            href="/products"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Products</span>
           </Link>
           <Link
-            href="/about/"
+            href="/about"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>About Us</span>
           </Link>
           <Link
-            href="/collaborate/"
+            href="/collaborate"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Collaboration</span>
           </Link>
           <Link
-            href="/contact/"
+            href="/contact"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Contact</span>
@@ -136,7 +136,7 @@ const Navbar = () => {
             <span>Home</span>
           </Link>
           <Link
-            href="/products/"
+            href="/products"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -144,7 +144,7 @@ const Navbar = () => {
             <span>Products</span>
           </Link>
           <Link
-            href="/about/"
+            href="/about"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -152,7 +152,7 @@ const Navbar = () => {
             <span>About Us</span>
           </Link>
           <Link
-            href="/collaborate/"
+            href="/collaborate"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -160,7 +160,7 @@ const Navbar = () => {
             <span>Collaboration</span>
           </Link>
           <Link
-            href="/contact/"
+            href="/contact"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >

@@ -1,4 +1,3 @@
-import React from "react";
 import { Metadata } from "next";
 
 import Carousel from "../../components/Carousel";
@@ -7,6 +6,20 @@ export const metadata: Metadata = {
   title: "Tentang Kami - PorluCoffee",
   description:
     "Ayo cari tahu bagaimana perjalanan PorluCoffee dan mari berkenalan dengan kami!",
+
+  keywords: [
+    "porlu coffee",
+    "porlucoffee",
+    "tentang kami porlucoffee",
+    "sejarah porlucoffee",
+    "visi misi porlucoffee",
+    "founder porlucoffee",
+  ],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const AboutPage = () => {

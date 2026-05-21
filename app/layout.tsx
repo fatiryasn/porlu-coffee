@@ -10,7 +10,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 
-import RootClient from "./RootClient"; 
+import RootClient from "./RootClient";
 
 // Font setup
 const poppins = Poppins({
@@ -53,8 +53,33 @@ export const metadata: Metadata = {
   title: "PorluCoffee",
   description:
     "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/",
+      id: "/id",
+      "x-default": "/",
+    },
+  },
+
+  openGraph: {
+    title: "PorluCoffee",
+    images: ["/porlucoffee-banner1.jpg"],
+    description:
+      "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
+    url: "https://porlucoffee.com",
+    siteName: "PorluCoffee",
+    type: "website",
+  },
   twitter: {
-    card: "summary_large_image"
+    card: "summary_large_image",
+    title: "PorluCoffee",
+    description:
+      "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
+    images: ["/porlucoffee-banner1.jpg"],
   },
 };
 

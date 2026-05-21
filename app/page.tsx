@@ -5,43 +5,27 @@ import { FaInstagram } from "react-icons/fa";
 
 import BestOf from "./components/BestOf";
 import Carousel from "./components/Carousel";
-
-const instaImages = [
-  {
-    image: "/assets/porlucoffee-story.png",
-    to: "https://www.instagram.com/p/DI---YHxhxP/",
-  },
-  {
-    image: "/assets/porlucoffee-espresso_pouch.webp",
-    to: "https://www.instagram.com/p/DJVcCofTUnv/",
-  },
-  {
-    image: "/assets/porlucoffee-brownsugar.webp",
-    to: "https://www.instagram.com/p/DJYlevpRXwQ/",
-  },
-  {
-    image: "/assets/porlucoffee-insta-image.jpg",
-    to: "https://www.instagram.com/p/DJYlQCURHRb/",
-  },
-  {
-    image: "/assets/porlucoffee-drip_coffee.jpg",
-    to: "https://www.instagram.com/p/DJZR_FfJzfy/",
-  },
-  {
-    image: "/assets/porlu-founder-with-mr-surip-mawardi.jpg",
-    to: "https://www.instagram.com/p/DKEMpT4RrbF/",
-  },
-  {
-    image: "/assets/porlucoffee-brownsugar_btl.webp",
-    to: "https://www.instagram.com/p/DKCaqoTJSKS/",
-  },
-];
-
+import { instagramImages } from "../data/instagramImages";
 
 export const metadata: Metadata = {
   title: "PorluCoffee",
   description:
     "Perfect Arabica. Coffee Specialty from Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
+
+  keywords: [
+    "porlu coffee",
+    "porlucoffee",
+    "doloksanggul coffee",
+    "arabica coffee",
+    "specialty coffee",
+    "north sumatera coffee",
+    "indonesian coffee",
+  ],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Home() {
@@ -363,7 +347,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-2  gap-1 md:gap-2 lg:gap-4 mt-20 lg:mt-0">
-          {instaImages.map((item, index) => (
+          {instagramImages.map((item, index) => (
             <a
               key={index}
               href={item.to}
