@@ -67,7 +67,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "PorluCoffee",
-    images: ["/assets/porlucoffee-banner1.jpg"],
+    images: ["/og-image.jpg"],
     description:
       "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
     url: "https://porlucoffee.com",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "PorluCoffee",
     description:
       "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
-    images: ["/assets/porlucoffee-banner1.jpg"],
+    images: ["/og-image.jpg"],
   },
 };
 
