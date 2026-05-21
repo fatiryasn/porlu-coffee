@@ -68,31 +68,31 @@ const Navbar = () => {
 
         <nav className="hidden md:flex justify-center items-center gap-6 font-jura">
           <Link
-            href="/id/"
+            href="/id"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Beranda</span>
           </Link>
           <Link
-            href="/id/produk/"
+            href="/id/produk"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Produk</span>
           </Link>
           <Link
-            href="/id/tentang-kami/"
+            href="/id/tentang-kami"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Tentang Kami</span>
           </Link>
           <Link
-            href="/id/kolaborasi/"
+            href="/id/kolaborasi"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Kolaborasi</span>
           </Link>
           <Link
-            href="/id/kontak/"
+            href="/id/kontak"
             className="font-medium flex items-center gap-1 hover:underline lg:text-lg"
           >
             <span>Kontak</span>
@@ -128,7 +128,7 @@ const Navbar = () => {
         </div>
         <nav className="flex flex-col gap-4 p-4 text-base font-jura">
           <Link
-            href="/id/"
+            href="/id"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -136,7 +136,7 @@ const Navbar = () => {
             <span>Beranda</span>
           </Link>
           <Link
-            href="/id/produk/"
+            href="/id/produk"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -144,7 +144,7 @@ const Navbar = () => {
             <span>Produk</span>
           </Link>
           <Link
-            href="/id/tentang-kami/"
+            href="/id/tentang-kami"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -152,7 +152,7 @@ const Navbar = () => {
             <span>Tentang Kami</span>
           </Link>
           <Link
-            href="/id/kolaborasi/"
+            href="/id/kolaborasi"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
@@ -160,7 +160,7 @@ const Navbar = () => {
             <span>Kolaborasi</span>
           </Link>
           <Link
-            href="/id/kontak/"
+            href="/id/kontak"
             onClick={() => setIsSidebarOpen(false)}
             className="flex items-center gap-2"
           >
