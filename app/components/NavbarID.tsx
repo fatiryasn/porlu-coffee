@@ -15,7 +15,7 @@ import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
   const pathname = usePathname();
-  const isHome = pathname === "/id/" || pathname === "/";
+  const isHome = pathname === "/id" || pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -43,7 +43,7 @@ const Navbar = () => {
           isHome && "animate-onlyFade"
         } top-0 right-0 left-0 z-30 flex justify-between items-center md:gap-20 py-4 px-4 md:px-10 lg:px-20 transition-all duration-300 ${navbarStyle}`}
       >
-        <Link href={"/id/"}>
+        <Link href={"/id"}>
           <div className="flex justify-center items-center gap-1 md:gap-2">
             <img
               src="/assets/porlucoffee-logo.png"
