@@ -1,6 +1,8 @@
+// /about
 import { Metadata } from "next";
 
 import Carousel from "../components/Carousel";
+import { generateAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
   title: "About - PorluCoffee",
@@ -16,6 +18,8 @@ export const metadata: Metadata = {
     "porlucoffee vision",
     "porlucoffee mission",
   ],
+
+  alternates: generateAlternates("/about"),
 
   robots: {
     index: true,

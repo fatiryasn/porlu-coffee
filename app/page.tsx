@@ -5,10 +5,11 @@ import { FaInstagram } from "react-icons/fa";
 
 import BestOf from "./components/BestOf";
 import Carousel from "./components/Carousel";
-import { instagramImages } from "../data/instagramImages";
+import { instagramImages } from "@/data/instagramImages";
+import { generateAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "PorluCoffee",
+  title: "PorluCoffee - Specialty Coffee from Doloksanggul",
   description:
     "Perfect Arabica. Coffee Specialty from Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
 
@@ -21,6 +22,8 @@ export const metadata: Metadata = {
     "north sumatera coffee",
     "indonesian coffee",
   ],
+
+  alternates: generateAlternates(""),
 
   robots: {
     index: true,

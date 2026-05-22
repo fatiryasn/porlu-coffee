@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import ProductTabs from "../../components/ProductTabs";
+import { generateAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
   title: "Produk - PorluCoffee",
@@ -14,11 +15,13 @@ export const metadata: Metadata = {
     "minuman porlucoffee",
   ],
 
+  alternates: generateAlternates("/id/produk"),
+
   robots: {
     index: true,
     follow: true,
   },
-}
+};
 
 const ProdukPage = () => {
   return (

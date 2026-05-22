@@ -5,10 +5,11 @@ import { FaInstagram } from "react-icons/fa";
 import BestOf from "./components/BestOf";
 import Carousel from "../components/Carousel";
 
-import { instagramImages } from "../../data/instagramImages";
+import { instagramImages } from "@/data/instagramImages";
+import { generateAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "Beranda - PorluCoffee",
+  title: "PorluCoffee - Specialty Coffee from Doloksanggul",
   description:
     "Perfect Arabica. Spesialis kopi dari Doloksanggul, Sumatera Utara. PorluCoffee adalah kopi yang berasal dari dataran tinggi Sumatera Utara, Doloksanggul",
 
@@ -21,6 +22,25 @@ export const metadata: Metadata = {
     "kopi sumatera utara",
     "kopi indonesia",
   ],
+
+  openGraph: {
+    title: "PorluCoffee - Specialty Coffee from Doloksanggul",
+    images: ["/og-image.jpg"],
+    description:
+      "Perfect Arabica. Spesialis kopi dari Doloksanggul, Sumatera Utara. PorluCoffee adalah kopi yang berasal dari dataran tinggi Sumatera Utara, Doloksanggul",
+    url: "https://porlucoffee.com/id",
+    siteName: "PorluCoffee",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PorluCoffee - Specialty Coffee from Doloksanggul",
+    description:
+      "Perfect Arabica. Spesialis kopi dari Doloksanggul, Sumatera Utara. PorluCoffee adalah kopi yang berasal dari dataran tinggi Sumatera Utara, Doloksanggul",
+    images: ["/og-image.jpg"],
+  },
+
+  alternates: generateAlternates("/id"),
 
   robots: {
     index: true,

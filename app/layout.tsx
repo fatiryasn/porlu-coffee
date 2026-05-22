@@ -50,7 +50,7 @@ const grenze = Grenze({
 });
 
 export const metadata: Metadata = {
-  title: "PorluCoffee",
+  title: "PorluCoffee - Specialty Coffee from Doloksanggul",
   description:
     "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
   icons: {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "PorluCoffee",
+    title: "PorluCoffee - Specialty Coffee from Doloksanggul",
     images: ["/og-image.jpg"],
     description:
       "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PorluCoffee",
+    title: "PorluCoffee - Specialty Coffee from Doloksanggul",
     description:
       "Perfect Arabica. From Doloksanggul, North Sumatera. PorluCoffee is a coffee that comes from the highlands of North Sumatra, Doloksanggul",
     images: ["/og-image.jpg"],

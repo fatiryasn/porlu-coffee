@@ -1,6 +1,9 @@
+// /id/kolaborasi
+
 import { Metadata } from "next";
 
 import CollabForm from "../components/CollabForm";
+import { generateAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
   title: "Kolaborasi - PorluCoffee",
@@ -14,6 +17,8 @@ export const metadata: Metadata = {
     "porlucoffee kemitraan",
     "porlucoffee kolaborasi",
   ],
+
+  alternates: generateAlternates("/id/kolaborasi"),
 
   robots: {
     index: true,

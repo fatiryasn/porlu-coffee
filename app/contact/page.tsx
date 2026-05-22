@@ -1,9 +1,11 @@
+// /contact
 import { Metadata } from "next";
 
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
 import ContactForm from "../components/ContactForm";
+import { generateAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
   title: "Contact - PorluCoffee",
@@ -17,6 +19,8 @@ export const metadata: Metadata = {
     "porlucoffee inquiries",
     "porlucoffee support",
   ],
+
+  alternates: generateAlternates("/contact"),
 
   robots: {
     index: true,

@@ -1,24 +1,68 @@
 import { MetadataRoute } from "next";
 
-const routes = [
-  "",
-  "/products",
-  "/about",
-  "/collaborations",
-  "/contact",
-
-  "/id",
-  "/id/produk",
-  "/id/tentang-kami",
-  "/id/kolaborasi",
-  "/id/kontak",
-];
+const BASE_URL = "https://porlucoffee.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({
-    url: `https://porlucoffee.com${route}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: route === "" || route === "/id" ? 1 : 0.8,
-  }));
+  const pages = [
+    {
+      en: "",
+      id: "/id",
+      priority: 1,
+    },
+    {
+      en: "/products",
+      id: "/id/produk",
+      priority: 0.8,
+    },
+    {
+      en: "/about",
+      id: "/id/tentang-kami",
+      priority: 0.8,
+    },
+    {
+      en: "/collaborations",
+      id: "/id/kolaborasi",
+      priority: 0.8,
+    },
+    {
+      en: "/contact",
+      id: "/id/kontak",
+      priority: 0.8,
+    },
+  ];
+
+  return pages.flatMap((page) => {
+    const enUrl = `${BASE_URL}${page.en}`;
+    const idUrl = `${BASE_URL}${page.id}`;
+
+    return [
+      {
+        url: enUrl,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: page.priority,
+
+        alternates: {
+          languages: {
+            en: enUrl,
+            id: idUrl,
+          },
+        },
+      },
+
+      {
+        url: idUrl,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: page.priority,
+
+        alternates: {
+          languages: {
+            en: enUrl,
+            id: idUrl,
+          },
+        },
+      },
+    ];
+  });
 }
