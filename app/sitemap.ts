@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      en: "/collaborations",
+      en: "/collaborate",
       id: "/id/kolaborasi",
       priority: 0.8,
     },
