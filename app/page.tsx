@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "indonesian coffee",
   ],
 
-  alternates: generateAlternates(""),
+  alternates: generateAlternates("/"),
 
   robots: {
     index: true,

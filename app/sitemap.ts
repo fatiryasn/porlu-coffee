@@ -5,7 +5,7 @@ const BASE_URL = "https://porlucoffee.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     {
-      en: "",
+      en: "/",
       id: "/id",
       priority: 1,
     },
@@ -39,27 +39,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       {
         url: enUrl,
         lastModified: new Date(),
-        changeFrequency: "weekly",
+        changeFrequency: "weekly" as const,
         priority: page.priority,
-
         alternates: {
           languages: {
             en: enUrl,
             id: idUrl,
+            "x-default": enUrl,
           },
         },
       },
-
       {
         url: idUrl,
         lastModified: new Date(),
-        changeFrequency: "weekly",
+        changeFrequency: "weekly" as const,
         priority: page.priority,
-
         alternates: {
           languages: {
             en: enUrl,
             id: idUrl,
+            "x-default": enUrl,
           },
         },
       },
